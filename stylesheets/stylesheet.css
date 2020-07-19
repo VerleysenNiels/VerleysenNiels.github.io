@@ -164,6 +164,12 @@ a.button span {
 #view-on-github {
   margin-right: 0;
 }
+#view-on-linkedin span {
+  background: transparent url(../images/linkedin-icon.png) 12px 50% no-repeat;
+}
+#view-on-linkedin {
+  margin-right: 0;
+}
 
 code, pre {
   margin-bottom: 30px;
