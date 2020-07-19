@@ -90,7 +90,7 @@ header h2 {
 }
 
 .inner {
-  width: 620px;
+  width: 850px;
   margin: 0 auto;
 }
 
@@ -317,6 +317,7 @@ footer a:hover {
 .clearfix {display: block;}
 
 .card {
+  padding: 5px;
   /* Add shadows to create the "card" effect */
   box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
