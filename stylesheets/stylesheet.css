@@ -113,7 +113,7 @@ header h2 {
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
-  position: absolute;
+  margin-bottom: 15px;
 }
 
 .button span {
