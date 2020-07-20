@@ -308,10 +308,12 @@ footer a:hover {
   box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   color: #e7e7e7;
+  font-weight: normal;
 }
 
 .card h3 {
   color: #e7e7e7;
+  font-weight: normal;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -320,7 +322,7 @@ footer a:hover {
 }
 
 .card img {
-  max-height: 200px;
+  max-height: 300px;
   float: left;
   margin: 8px;
 }
