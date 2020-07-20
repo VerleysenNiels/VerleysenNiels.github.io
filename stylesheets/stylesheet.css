@@ -299,7 +299,7 @@ footer a:hover {
 .card {
   padding: 30px;
   overflow:hidden;
-  background: #e7e7e7 url(../images/card-graddient.jpg) 0 0 no-repeat;
+  background: #e7e7e7 url(../images/card-gradient.jpg) 0 0 no-repeat;
   /* Add shadows to create the "card" effect */
   box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
@@ -311,15 +311,24 @@ footer a:hover {
   box-shadow: 0 12px 20px 0 rgba(0,0,0,0.2);
 }
 
-.card img {
-  width: 150px;
-  height: 150px;
+.card img .right {
+  width: 200px;
+  height: 200px;
+  float: right;
+  margin: 10px;
+}
+
+.card img .left {
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin: 10px;
 }
 
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/12240.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/12240.jpg);
 
   /* Set a specific height */
   height: 75%;
