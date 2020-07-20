@@ -299,11 +299,15 @@ footer a:hover {
 .card {
   padding: 30px;
   overflow:hidden;
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 50%, rgba(9,9,121,1) 100%, rgba(219,245,3,1) 100%);
+  background: rgb(31,87,122);
+  background: linear-gradient(90deg, rgba(31,87,122,1) 0%, rgba(250,253,255,1) 100%, rgba(219,245,3,1) 100%);
   /* Add shadows to create the "card" effect */
   box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
+  color: #e7e7e7;
+}
+
+.card h3 {
   color: #e7e7e7;
 }
 
@@ -312,16 +316,17 @@ footer a:hover {
   box-shadow: 0 12px 20px 0 rgba(0,0,0,0.2);
 }
 
+.card img {
+  width: 200px;
+  height: 200px;
+}
+
 .card img .right {
-  width: 150px;
-  height: 150px;
   float: right;
   margin: 10px;
 }
 
 .card img .left {
-  width: 150px;
-  height: 150px;
   float: left;
   margin: 10px;
 }
@@ -333,7 +338,6 @@ footer a:hover {
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
