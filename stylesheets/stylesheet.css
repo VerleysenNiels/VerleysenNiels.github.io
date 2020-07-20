@@ -288,6 +288,8 @@ footer {
   color: #303030;
   background: transparent url('../images/hr.png') 0 0 no-repeat;
   align-self: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer a {
@@ -318,8 +320,7 @@ footer a:hover {
 }
 
 .card img {
-  width: 250px;
-  height: 250px;
+  max-height: 200px;
   float: left;
   margin: 8px;
 }
@@ -334,7 +335,6 @@ footer a:hover {
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  width: 100vw;
   height: 100vh;
   /* Flexbox stuff */
   display: flex;
