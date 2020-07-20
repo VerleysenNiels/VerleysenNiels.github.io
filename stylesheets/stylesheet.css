@@ -310,7 +310,8 @@ footer a:hover {
 .clearfix {display: block;}
 
 .card {
-  padding: 5px;
+  padding: 10px;
+  overflow:hidden;
   background: #e7e7e7 url(../images/body-bg.png) 0 0 repeat;
   /* Add shadows to create the "card" effect */
   box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2);
@@ -320,6 +321,12 @@ footer a:hover {
 /* On mouse-over, add a deeper shadow */
 .card:hover {
   box-shadow: 0 12px 20px 0 rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 50px;
+  height: 50px;
+
 }
 
 /* #Media Queries
