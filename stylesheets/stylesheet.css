@@ -299,6 +299,10 @@ footer a:hover {
   color: #444;
 }
 
+#center-footer {
+  align-content: center;
+}
+
 .card {
   padding: 30px;
   overflow:hidden;
