@@ -52,7 +52,6 @@ body {
   font-size: 1em;
   line-height: 1.5;
   color: #303030;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
   background: #e7e7e7 url(../images/background-02.jpg) 0 0 repeat;
 }
 
@@ -301,6 +300,13 @@ footer a:hover {
 
 #center-footer {
   align-content: center;
+}
+
+#main_content{
+  background: #e7e7e7;
+  border-color: #666;
+  border-width: 2px;
+  border-radius: 10px;  
 }
 
 .card {
