@@ -104,7 +104,7 @@ header h2 {
   padding: 20px;
   transition: all 0.5s;
   cursor: pointer;
-  margin: 5px;
+  margin: 15px;
   margin-bottom: 15px;
 }
 
@@ -321,7 +321,8 @@ footer a:hover {
 
 .card {
   padding: 30px;
-  margin: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   overflow:hidden;
   background: rgb(16,53,78);
   background: linear-gradient(90deg, rgba(16,53,78,1) 0%, rgba(24,77,112,1) 100%, rgba(219,245,3,1) 100%);
