@@ -289,6 +289,8 @@ footer {
   align-self: center;
   margin-left: auto;
   margin-right: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 footer a {
@@ -300,6 +302,8 @@ footer a:hover {
 
 #center-footer {
   align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .white {
