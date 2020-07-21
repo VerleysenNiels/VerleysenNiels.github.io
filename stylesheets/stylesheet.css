@@ -303,10 +303,11 @@ footer a:hover {
 }
 
 .white {
-  background: #e7e7e7;
+  background: #ffffff;
   border-color: #444;
   border-width: thin;
-  border-radius: 10px;  
+  border-radius: 10px;
+  padding: 30px;  
 }
 
 #main_content {

@@ -34,55 +34,58 @@
             <h2><a id="about" class="anchor" href="#about" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About this page and myself.</h3>
             <p>Welcome to my personal github page! This page is meant as an overview of the different projects that I am working on or that I have finished. These include the repositories for both my theses and different school and side projects. In 2019 I obtained a master's degree in Information Engineering Technology at the University of Ghent and one year later I obtained an advanced master's degree in Artificial Intelligence at KU Leuven. I enjoy creating new things, even if they are not always very useful. Currently I am looking for work as an Artificial Intelligence Engineer. </p>
           </div>
-
-          <h2><a id="Current" class="anchor" href="#current" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Current project</h3>
-          <div class="container">
-            <div class="card">
-              <div>
-                <h3>Text generator with Long Short-Term Memory networks</h2>
-                <p>In this project I am making a LSTM network that learns to write text by reading a .txt file. When trained this network can generate new text based on what it has read. Currently the basic system works and I am working on further improvements.</p>
+          
+          <div class="white">
+            <h2><a id="Current" class="anchor" href="#current" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Current project</h3>
+            <div class="container">
+              <div class="card">
+                <div>
+                  <h3>Text generator with Long Short-Term Memory networks</h2>
+                  <p>In this project I am making a LSTM network that learns to write text by reading a .txt file. When trained this network can generate new text based on what it has read. Currently the basic system works and I am working on further improvements.</p>
+                </div>
+                <a href="https://github.com/VerleysenNiels/Textgeneration_with_RNN" id="textrnn-view" class="button"><span>Take a look at the repository</span></a>
               </div>
-              <a href="https://github.com/VerleysenNiels/Textgeneration_with_RNN" id="textrnn-view" class="button"><span>Take a look at the repository</span></a>
             </div>
           </div>
         </section>
         
         <section id="main_content">
-          <h2><a id="Finished" class="anchor" href="#finished" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Finished projects</h3>
-          <div class="container">
-            <div class="card">
-              <div>
-                <h3>Thesis: Temporal modeling for safer spacecrafts</h2>
-                <img src="../images/showcase/temporal-mod-showcase.gif" align=”left” class="left"/>
-                <p>Main project of my thesis. This is a proof-of-concept unsupervised anomaly detection system for spacecrafts, but it can also be used in other applications. This system is based on a LSTM network that learns to predict future observations of the sensors of the system. These predictions can then be used to detect anomalies and report a ranking of the sensors based on how their error. To train and test this system I was able to use one year of sensor measurements of the Mars Express orbiter. In the testing phase the system was able to very quickly detect deviations of single or combinations of sensors and these were reported clearly with the ranking system.</p>
+          <div class="white">
+            <h2><a id="Finished" class="anchor" href="#finished" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Finished projects</h3>
+            <div class="container">
+              <div class="card">
+                <div>
+                  <h3>Thesis: Temporal modeling for safer spacecrafts</h2>
+                  <img src="../images/showcase/temporal-mod-showcase.gif" align=”left” class="left"/>
+                  <p>Main project of my thesis. This is a proof-of-concept unsupervised anomaly detection system for spacecrafts, but it can also be used in other applications. This system is based on a LSTM network that learns to predict future observations of the sensors of the system. These predictions can then be used to detect anomalies and report a ranking of the sensors based on how their error. To train and test this system I was able to use one year of sensor measurements of the Mars Express orbiter. In the testing phase the system was able to very quickly detect deviations of single or combinations of sensors and these were reported clearly with the ranking system.</p>
+                </div>
+                <a href="https://github.com/VerleysenNiels/Temporal-modeling-for-safer-spacecrafts" id="tempmod-view" class="button"><span>Take a look at the repository</span></a>
               </div>
-              <a href="https://github.com/VerleysenNiels/Temporal-modeling-for-safer-spacecrafts" id="tempmod-view" class="button"><span>Take a look at the repository</span></a>
+            </div>
+
+            <div class="container">
+              <div class="card">
+                <div>
+                  <h3>Pattern constructing swarm in MASON</h2>
+                  <img src="https://github.com/VerleysenNiels/Self-assembling-swarm/blob/master/Examples/five_rectangles_bridge.gif" align=”left” class="left"/>
+                  <p>In this project I first recreated the self-organizing kilobot swarm from the WYSS Institute in the MASON environment. This swarm can arrange itself in any given shape, as long as this shape exists out of one piece. The bots build up a gradient field around some seed bots and use this to determine their location. By knowing their location these bots can then determine when they should join the shape. I then extended this system with the idea of bridge-forming, enabling the bots to construct multiple shapes at once. The current bridge-forming principle is however not completely stable.</p>
+                </div>
+                <a href="https://github.com/VerleysenNiels/Self-assembling-swarm" id="tempmod-view" class="button"><span>Take a look at the repository</span></a>
+                <a href="https://github.com/VerleysenNiels/Self-assembling-swarm/blob/master/Paper_Self_Assembling_Swarm.pdf" id="tempmod-view" class="button"><span>Read the paper</span></a>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="card">
+                <div>
+                  <h3>Anomaly detection on synthetic data</h2>
+                  <img src="../images/showcase/lstm-periodic-showcase.gif" align=”left” class="left"/>
+                  <p>Little brother of the main project of my thesis. This is a proof-of-concept unsupervised anomaly detection system trained on a single synthetic signal. This system is based on a LSTM network that learns to predict future values of the signal, which are then used to detect anomalies through a threshold on the loss. Using a synthetic signal allows for testing different aspects and capabilities of the system.</p>
+                </div>
+                <a href="https://github.com/VerleysenNiels/LSTM_Periodic_Function" id="tempmod-view" class="button"><span>Take a look at the repository</span></a>
+              </div>
             </div>
           </div>
-
-          <div class="container">
-            <div class="card">
-              <div>
-                <h3>Pattern constructing swarm in MASON</h2>
-                <img src="https://github.com/VerleysenNiels/Self-assembling-swarm/blob/master/Examples/five_rectangles_bridge.gif" align=”left” class="left"/>
-                <p>In this project I first recreated the self-organizing kilobot swarm from the WYSS Institute in the MASON environment. This swarm can arrange itself in any given shape, as long as this shape exists out of one piece. The bots build up a gradient field around some seed bots and use this to determine their location. By knowing their location these bots can then determine when they should join the shape. I then extended this system with the idea of bridge-forming, enabling the bots to construct multiple shapes at once. The current bridge-forming principle is however not completely stable.</p>
-              </div>
-              <a href="https://github.com/VerleysenNiels/Self-assembling-swarm" id="tempmod-view" class="button"><span>Take a look at the repository</span></a>
-              <a href="https://github.com/VerleysenNiels/Self-assembling-swarm/blob/master/Paper_Self_Assembling_Swarm.pdf" id="tempmod-view" class="button"><span>Read the paper</span></a>
-            </div>
-          </div>
-
-          <div class="container">
-            <div class="card">
-              <div>
-                <h3>Anomaly detection on synthetic data</h2>
-                <img src="../images/showcase/lstm-periodic-showcase.gif" align=”left” class="left"/>
-                <p>Little brother of the main project of my thesis. This is a proof-of-concept unsupervised anomaly detection system trained on a single synthetic signal. This system is based on a LSTM network that learns to predict future values of the signal, which are then used to detect anomalies through a threshold on the loss. Using a synthetic signal allows for testing different aspects and capabilities of the system.</p>
-              </div>
-              <a href="https://github.com/VerleysenNiels/LSTM_Periodic_Function" id="tempmod-view" class="button"><span>Take a look at the repository</span></a>
-            </div>
-          </div>
-
         </section>        
       </div>
     </div>
