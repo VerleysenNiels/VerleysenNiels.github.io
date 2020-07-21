@@ -308,6 +308,12 @@ footer a:hover {
   border-width: thin;
   border-radius: 10px;
   padding: 30px;  
+  margin: 30px;
+}
+
+.white-block-padding {
+  padding: 30px;
+  margin: 30px;
 }
 
 #main_content {
@@ -316,6 +322,7 @@ footer a:hover {
 
 .card {
   padding: 30px;
+  margin: 30px;
   overflow:hidden;
   background: rgb(16,53,78);
   background: linear-gradient(90deg, rgba(16,53,78,1) 0%, rgba(24,77,112,1) 100%, rgba(219,245,3,1) 100%);
