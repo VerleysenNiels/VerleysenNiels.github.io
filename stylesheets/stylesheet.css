@@ -349,9 +349,9 @@ footer a:hover {
 }
 
 .card img {
-  max-width: 150px;
+  max-height: 250px;
   float: left;
-  margin: 8px;
+  margin: 15px;
 }
 
 /* The hero image */
