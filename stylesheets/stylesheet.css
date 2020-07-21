@@ -287,10 +287,8 @@ footer {
   color: #303030;
   background: transparent url('../images/hr.png') 0 0 no-repeat;
   align-self: center;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-  align-items: center;
+  margin: auto;
+	width: max-content;
 }
 
 footer a {
@@ -298,12 +296,6 @@ footer a {
 }
 footer a:hover {
   color: #444;
-}
-
-#center-footer {
-  align-content: center;
-  justify-content: center;
-  align-items: center;
 }
 
 .white {
