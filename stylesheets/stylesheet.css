@@ -302,11 +302,15 @@ footer a:hover {
   align-content: center;
 }
 
-#main_content{
+.white {
   background: #e7e7e7;
-  border-color: #666;
-  border-width: 2px;
+  border-color: #444;
+  border-width: thin;
   border-radius: 10px;  
+}
+
+#main_content {
+  padding: 30px;
 }
 
 .card {

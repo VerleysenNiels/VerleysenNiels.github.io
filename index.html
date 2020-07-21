@@ -10,7 +10,7 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <title>Niels Verleysen by VerleysenNiels</title>
+    <title>Niels Verleysen</title>
   </head>
 
   <body>
@@ -30,9 +30,11 @@
       <div class="inner">
 
         <section id="main_content">
-          <h2><a id="about" class="anchor" href="#about" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About this page and myself.</h3>
-          <p>Welcome to my personal github page! This page is meant as an overview of the different projects that I am working on or that I have finished. These include the repositories for both my theses and different school and side projects. In 2019 I obtained a master's degree in Information Engineering Technology at the University of Ghent and one year later I obtained an advanced master's degree in Artificial Intelligence at KU Leuven. I enjoy creating new things, even if they are not always very useful. Currently I am looking for work as an Artificial Intelligence Engineer. </p>
-          
+          <div class="white">
+            <h2><a id="about" class="anchor" href="#about" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About this page and myself.</h3>
+            <p>Welcome to my personal github page! This page is meant as an overview of the different projects that I am working on or that I have finished. These include the repositories for both my theses and different school and side projects. In 2019 I obtained a master's degree in Information Engineering Technology at the University of Ghent and one year later I obtained an advanced master's degree in Artificial Intelligence at KU Leuven. I enjoy creating new things, even if they are not always very useful. Currently I am looking for work as an Artificial Intelligence Engineer. </p>
+          </div>
+
           <h2><a id="Current" class="anchor" href="#current" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Current project</h3>
           <div class="container">
             <div class="card">
@@ -57,6 +59,30 @@
               <a href="https://github.com/VerleysenNiels/Temporal-modeling-for-safer-spacecrafts" id="tempmod-view" class="button"><span>Take a look at the repository</span></a>
             </div>
           </div>
+
+          <div class="container">
+            <div class="card">
+              <div>
+                <h3>Pattern constructing swarm in MASON</h2>
+                <img src="https://github.com/VerleysenNiels/Self-assembling-swarm/blob/master/Examples/five_rectangles_bridge.gif" align=”left” class="left"/>
+                <p>In this project I first recreated the self-organizing kilobot swarm from the WYSS Institute in the MASON environment. This swarm can arrange itself in any given shape, as long as this shape exists out of one piece. The bots build up a gradient field around some seed bots and use this to determine their location. By knowing their location these bots can then determine when they should join the shape. I then extended this system with the idea of bridge-forming, enabling the bots to construct multiple shapes at once. The current bridge-forming principle is however not completely stable.</p>
+              </div>
+              <a href="https://github.com/VerleysenNiels/Self-assembling-swarm" id="tempmod-view" class="button"><span>Take a look at the repository</span></a>
+              <a href="https://github.com/VerleysenNiels/Self-assembling-swarm/blob/master/Paper_Self_Assembling_Swarm.pdf" id="tempmod-view" class="button"><span>Read the paper</span></a>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="card">
+              <div>
+                <h3>Anomaly detection on synthetic data</h2>
+                <img src="../images/showcase/lstm-periodic-showcase.gif" align=”left” class="left"/>
+                <p>Little brother of the main project of my thesis. This is a proof-of-concept unsupervised anomaly detection system trained on a single synthetic signal. This system is based on a LSTM network that learns to predict future values of the signal, which are then used to detect anomalies through a threshold on the loss. Using a synthetic signal allows for testing different aspects and capabilities of the system.</p>
+              </div>
+              <a href="https://github.com/VerleysenNiels/LSTM_Periodic_Function" id="tempmod-view" class="button"><span>Take a look at the repository</span></a>
+            </div>
+          </div>
+
         </section>        
       </div>
     </div>
