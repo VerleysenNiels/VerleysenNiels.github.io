@@ -366,7 +366,7 @@ footer a:hover {
 /* The hero image */
 .hero-image-secondary {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background: url(../images/AI-Banner.jpg) 0 0 no-repeat;
+  background: url(../images/AI-Banner.png) 0 0 no-repeat;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
