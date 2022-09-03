@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Niels Verleysen - Projects</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="hero-image-secondary">
+        <div class="hero-text">
+          <h1>Projects</h1>
+          <section id="downloads" class="clearfix">
+            <a href="https://verleysenniels.github.io/" id="return-home" class="button"><span>Back to homepage</span></a>
+          </section>
+        </div>
+      </div>
+    </header>
+        
+    <div id="container">
+      <div class="inner">
+        <section id="main_content">     
+          <div class="white">
+            <h2><a id="Projects" class="anchor" href="#projects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Finished projects</h3>
+            
+            <div class="container">
+              <div class="card">
+                <div>
+                  <h3>YOLO object detector with PyTorch</h2>
+                  <img src="../images/showcase/yolo-showcase-1.gif" align=”left” class="left"/>
+                  <p>This repository contains an implementation of the YoloV3 network (pretrained) in PyTorch. The provided script reads a video, applies detection and shows the video with the detections drawn on it. I did not add any commandline arguments, so changing the configuration and input video should be done in the code itself (yolo.py).</p>
+                </div>
+                <a href="https://github.com/VerleysenNiels/Pytorch-YOLO" id="yolo" class="button"><span>Take a look at the repository</span></a>
+              </div>
+            </div>  
+
+            <div class="container">
+              <div class="card">
+                <div>
+                  <h3>Text generator with Long Short-Term Memory networks</h2>
+                  <img src="../images/showcase/text-gen-showcase.gif" align=”left” class="left"/>
+                  <p>In this project I constructed and trained an LSTM network that learns to write text by reading a text file. When trained this network can be used to generate new text based on what it has read before. The last trained network (v3) reads the last 100 characters of text and predicts the next character. This type of text generator does not really know context and even spelling can be difficult. The latest network writes somewhat readable text and to further improve this I applied an autocorrection library, but this did not help much.</p>
+                </div>
+                <a href="https://github.com/VerleysenNiels/Textgeneration_with_RNN" id="textrnn-view" class="button"><span>Take a look at the repository</span></a>
+              </div>
+            </div>
+            
+            <div class="container">
+              <div class="card">
+                <div>
+                  <h3>Thesis: Temporal modeling for safer spacecrafts</h2>
+                  <img src="../images/showcase/temporal-mod-showcase.gif" align=”left” class="left"/>
+                  <p>Main project of my thesis. This is a proof-of-concept unsupervised anomaly detection system for spacecrafts. But in general, it can also be used to monitor any system with (a lot of) sensors. This system is based on an LSTM network that learns to predict future observations of the sensors of the system. These predictions can then be used to detect anomalies and report a ranking of the sensors based on their error. To train and test this system I was able to use one year of sensor measurements of the Mars Express orbiter (provided by the European Space Agency). In the testing phase the system was able to quickly detect deviations of single or multiple sensors.</p>
+                </div>
+                <a href="https://github.com/VerleysenNiels/Temporal-modeling-for-safer-spacecrafts" id="tempmod-view" class="button"><span>Take a look at the repository</span></a>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="card">
+                <div>
+                  <h3>Pattern constructing swarm in MASON</h2>
+                  <img src="../images/showcase/five_rectangles_bridge.gif" align=”left” class="left"/>
+                  <p>In this project I first recreated the self-organizing kilobot swarm from the WYSS Institute in the MASON environment. This swarm can arrange itself in any given shape, as long as this shape exists out of one piece. The bots build up a gradient field around some seed bots and use this to determine their location. By knowing their location these bots can then determine when they should join the shape. I extended this system with the idea of bridge-forming, enabling the bots to construct multiple shapes at once. The current bridge-forming principle is not completely stable, some ideas are given in the paper to solve this problem.</p>
+                </div>
+                <a href="https://github.com/VerleysenNiels/Self-assembling-swarm" id="tempmod-view" class="button"><span>Take a look at the repository</span></a>
+                <a href="https://github.com/VerleysenNiels/Self-assembling-swarm/blob/master/Paper_Self_Assembling_Swarm.pdf" id="tempmod-view" class="button"><span>Read the paper</span></a>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="card">
+                <div>
+                  <h3>Anomaly detection on synthetic data</h2>
+                  <img src="../images/showcase/lstm-periodic-showcase.gif" align=”left” class="left"/>
+                  <p>Little brother of the main project for my thesis (Temporal modeling for safer spacecrafts, 2020). This is a proof-of-concept unsupervised anomaly detection system trained on a single synthetic signal. This system is based on an LSTM network that learns to predict future values of the signal, which are then used to detect anomalies through a threshold on the loss. Using a synthetic signal allows for testing different aspects and capabilities of the system. The system is able to detect deviations in amplitude and frequency of the signal. It is however unable to reliably detect the decay of a high frequency component of a signal.</p>
+                </div>
+                <a href="https://github.com/VerleysenNiels/LSTM_Periodic_Function" id="tempmod-view" class="button"><span>Take a look at the repository</span></a>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="card">
+                <div>
+                  <h3>Reinforcement learning in OpenAi Gym</h2>
+                  <img src="../images/showcase/qlearning-showcase.gif" align=”left” class="left"/>
+                  <p>As part of my thesis (Reinforcement Learning: with applications to robotic control, 2019) I tested different versions of the Q-Learning algorithm in the Gym environment. With Reinforcement Learning an agent can be trained to do certain tasks by reinforcing good behaviour and punishing bad behaviour. In this case the agent needs to learn to play a videogame like a human, this means that it gets a frame as input and needs to decide which button to press in order to gain points and to avoid losing. In my thesis I then applied this algorithm to a simulated robotic arm in order to make it pick up boxes.</p>
+                </div>
+                <a href="https://github.com/VerleysenNiels/Q-Learning" id="tempmod-view" class="button"><span>Take a look at the repository</span></a>
+                <a href="https://github.com/VerleysenNiels/Q-Learning/blob/master/Paper_Deep_Reinforcement_Learning.pdf" id="tempmod-view" class="button"><span>Read the paper</span></a>
+              </div>
+            </div>
+
+            <div class="container">
+                <div class="card">
+                  <div>
+                    <h3>Indoor location tracking in museums</h2>
+                    <p>In this group project we applied computer vision to determine the location of a user inside a museum. A camera, either mounted or via a smartphone, sees what the user sees while walking around in the museum. The program then detects paintings and extracts them from the video frame. The ID of the painting can be determined by feature matching and as the system knows where every painting is located, it can determine the location of the user. To improve the accuracy we then eliminate estimated locations that are impossible, for instance a user cannot jump from one side of the museum to another between two frames.</p>
+                  </div>
+                  <a href="https://github.com/VerleysenNiels/Project_Computervisie" id="tempmod-view" class="button"><span>Take a look at the repository</span></a>
+                  <a href="https://github.com/VerleysenNiels/Project_Computervisie/blob/master/Indoor%20Location%20Tracking%20in%20Museums%20by%20Painting%20Detection%20and%20Matching.pdf" id="tempmod-view" class="button"><span>Read the paper</span></a>
+                </div>
+              </div>
+
+          </div>
+        </section>        
+      </div>
+    </div>
+    
+    <footer>
+      Created by Niels Verleysen.
+      <a href='https://www.freepik.com/free-photos-vectors/banner'>Banner vector created by kjpargeter - www.freepik.com</a>
+    </footer>
+    
+  </body>
+</html>
