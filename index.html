@@ -30,12 +30,12 @@
 
         <section id="main_content">
           <div class="white">
-            <h2><a id="about" class="anchor" href="#about" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About this page and myself.</h3>
+            <h2><a id="about" class="anchor" href="#about" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About this page and myself.</h2>
             <p>Welcome to my personal github page! &#128400  As you can see this page is meant as a portfolio of my side-projects and blogs. I'm currently employed as an AI System Engineer at Verhaert, an innovation consultancy company trusted by some of the largest companies in their respective fields. &#128640 My role can be best described as applied datascience research for product development (both physical and digital products), although I work with non-ML algorithms too. I enjoy learning and creating new things, even if they are not always very useful. &#128584</p>
           </div>
           
           <div class="white">
-            <h2><a id="Projects" class="anchor" href="#latest" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Projects</h3>
+            <h2><a id="Projects" class="anchor" href="#latest" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Projects</h2>
             <div class="container">
                 <!-- Slideshow container -->
                 <div class="slideshow-container">
@@ -43,33 +43,33 @@
                   <div class="slides1">
                     <div class="card">
                       <div>
-                        <h3>Thesis: Temporal modeling for safer spacecrafts</h2>
+                        <h3>Thesis: Temporal modeling for safer spacecrafts</h3>
                         <img src="../images/showcase/temporal-mod-showcase.gif" align=”left” class="left"/>
                         <p>Main project of my thesis. This is a proof-of-concept unsupervised anomaly detection system for spacecrafts. But in general, it can also be used to monitor any system with (a lot of) sensors. This system is based on an LSTM network that learns to predict future observations of the sensors of the system. These predictions can then be used to detect anomalies and report a ranking of the sensors based on their error. To train and test this system I was able to use one year of sensor measurements of the Mars Express orbiter (provided by the European Space Agency). In the testing phase the system was able to quickly detect deviations of single or multiple sensors.</p>
                       </div>
-                      <a href="https://verleysenniels.github.io/projects" id="tempmod-view" class="button"><span>More projects</span></a>
+                      <a href="https://verleysenniels.github.io/projects" id="tempmod-view" class="button"><span>All projects</span></a>
                     </div>
                   </div>
 
-                  <div class="slides1">
+                  <div class="slides1" hidden>
                     <div class="card">
                       <div>
-                        <h3>Reinforcement learning in OpenAi Gym</h2>
+                        <h3>Reinforcement learning in OpenAi Gym</h3>
                         <img src="../images/showcase/qlearning-showcase.gif" align=”left” class="left"/>
                         <p>As part of my thesis (Reinforcement Learning: with applications to robotic control, 2019) I tested different versions of the Q-Learning algorithm in the Gym environment. With Reinforcement Learning an agent can be trained to do certain tasks by reinforcing good behaviour and punishing bad behaviour. In this case the agent needs to learn to play a videogame like a human, this means that it gets a frame as input and needs to decide which button to press in order to gain points and to avoid losing. In my thesis I then applied this algorithm to a simulated robotic arm in order to make it pick up boxes.</p>
                       </div>
-                      <a href="https://verleysenniels.github.io/projects" id="tempmod-view" class="button"><span>More projects</span></a>
+                      <a href="https://verleysenniels.github.io/projects" id="tempmod-view" class="button"><span>All projects</span></a>
                     </div>
                   </div>
 
-                  <div class="slides1">
+                  <div class="slides1" hidden>
                     <div class="card">
                       <div>
-                        <h3>Pattern constructing swarm in MASON</h2>
+                        <h3>Pattern constructing swarm in MASON</h3>
                         <img src="../images/showcase/five_rectangles_bridge.gif" align=”left” class="left"/>
                         <p>In this project I first recreated the self-organizing kilobot swarm from the WYSS Institute in the MASON environment. This swarm can arrange itself in any given shape, as long as this shape exists out of one piece. The bots build up a gradient field around some seed bots and use this to determine their location. By knowing their location these bots can then determine when they should join the shape. I extended this system with the idea of bridge-forming, enabling the bots to construct multiple shapes at once. The current bridge-forming principle is not completely stable, some ideas are given in the paper to solve this problem.</p>
                       </div>
-                      <a href="https://verleysenniels.github.io/projects" id="tempmod-view" class="button"><span>More projects</span></a>                      
+                      <a href="https://verleysenniels.github.io/projects" id="tempmod-view" class="button"><span>All projects</span></a>                      
                     </div> 
                   </div>
 
@@ -78,18 +78,11 @@
                   <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
                 </div>
                 <br>
-
-                <!-- The dots/circles -->
-                <div style="text-align:center">
-                  <span class="dot" onclick="showSlides(1, 0)"></span>
-                  <span class="dot" onclick="currentSlide(2, 0)"></span>
-                  <span class="dot" onclick="currentSlide(3, 0)"></span>
-                </div>
             </div>
           </div>
         
           <div class="white">
-            <h2><a id="Blogs" class="anchor" href="#blogs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Blogs & Insights</h3>          
+            <h2><a id="Blogs" class="anchor" href="#blogs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Blogs & Insights</h2>          
               <div class="container">
                 <!-- Slideshow container -->
                 <div class="slideshow-container">
@@ -98,33 +91,33 @@
                   <div class="slides2">
                     <div class="card">
                       <div>
-                        <h3>Thesis: Temporal modeling for safer spacecrafts</h2>
-                        <img src="../images/showcase/temporal-mod-showcase.gif" align=”left” class="left"/>
-                        <p>Main project of my thesis. This is a proof-of-concept unsupervised anomaly detection system for spacecrafts. But in general, it can also be used to monitor any system with (a lot of) sensors. This system is based on an LSTM network that learns to predict future observations of the sensors of the system. These predictions can then be used to detect anomalies and report a ranking of the sensors based on their error. To train and test this system I was able to use one year of sensor measurements of the Mars Express orbiter (provided by the European Space Agency). In the testing phase the system was able to quickly detect deviations of single or multiple sensors.</p>
+                        <h3>The ultimate roadmap for self-learning products</h3>
+                        <img src="../images/insights/idea.jpg" align=”left” class="left"/>
+                        <p>Did you ever wonder how some intelligent products are so incredibly good at certain tasks? And did you then wonder how you could do this with one of your products? If you did, then you are at the right place, because in this blog we are diving into the world of continuous learning. We’ll discuss what continuous learning is and how this can be applied to almost any product with our handy roadmap. Whether it’s something as simple as a lamp or as complex as a modern car, we’ve got you covered.</p>
                       </div>
-                      <a href="https://verleysenniels.github.io/projects" id="tempmod-view" class="button"><span>More projects</span></a>
+                      <a href="https://verleysenniels.github.io/insights" id="tempmod-view" class="button"><span>All insights</span></a>     
                     </div>
                   </div>
 
-                  <div class="slides2">
+                  <div class="slides2" hidden>
                     <div class="card">
                       <div>
-                        <h3>Reinforcement learning in OpenAi Gym</h2>
-                        <img src="../images/showcase/qlearning-showcase.gif" align=”left” class="left"/>
-                        <p>As part of my thesis (Reinforcement Learning: with applications to robotic control, 2019) I tested different versions of the Q-Learning algorithm in the Gym environment. With Reinforcement Learning an agent can be trained to do certain tasks by reinforcing good behaviour and punishing bad behaviour. In this case the agent needs to learn to play a videogame like a human, this means that it gets a frame as input and needs to decide which button to press in order to gain points and to avoid losing. In my thesis I then applied this algorithm to a simulated robotic arm in order to make it pick up boxes.</p>
+                        <h3>Hybrid AI, spreading AI between edge and cloud</h3>
+                        <img src="../images/insights/keyboard.jpg" align=”left” class="left"/>
+                        <p>A continuation on the edge versus cloud intelligence blog. In this blog, we’ll dive deeper into the hybrid approach and how to distribute the AI model between device and cloud with deep neural networks.</p>
                       </div>
-                      <a href="https://verleysenniels.github.io/projects" id="tempmod-view" class="button"><span>More projects</span></a>
+                      <a href="https://verleysenniels.github.io/insights" id="tempmod-view" class="button"><span>All insights</span></a>     
                     </div>
                   </div>
 
-                  <div class="slides2">
+                  <div class="slides2" hidden>
                     <div class="card">
                       <div>
-                        <h3>Pattern constructing swarm in MASON</h2>
-                        <img src="../images/showcase/five_rectangles_bridge.gif" align=”left” class="left"/>
-                        <p>In this project I first recreated the self-organizing kilobot swarm from the WYSS Institute in the MASON environment. This swarm can arrange itself in any given shape, as long as this shape exists out of one piece. The bots build up a gradient field around some seed bots and use this to determine their location. By knowing their location these bots can then determine when they should join the shape. I extended this system with the idea of bridge-forming, enabling the bots to construct multiple shapes at once. The current bridge-forming principle is not completely stable, some ideas are given in the paper to solve this problem.</p>
+                        <h3>A 4-step guide to choose between edge & cloud for smart home devices</h3>
+                        <img src="../images/insights/pcb.jpg" align=”left” class="left"/>
+                        <p>Have you ever wondered why your smart home devices are rather dumb when you switch off the internet? Turns out, many of these devices are not as bright as you think. They borrow their intelligence from their ‘cloud’ overlords. Maybe you’re entertaining the idea of making your company’s product smart as well. You might wonder: “Why can’t my device think on its own?” In this blog, we’ll dive into the world of central (cloud) vs local (edge) intelligence and share how we weigh these options when we sketch out a new AI design for smart home applications.</p>
                       </div>
-                      <a href="https://verleysenniels.github.io/projects" id="tempmod-view" class="button"><span>More projects</span></a>                      
+                      <a href="https://verleysenniels.github.io/insights" id="tempmod-view" class="button"><span>All insights</span></a>                      
                     </div> 
                   </div>
 
@@ -133,13 +126,6 @@
                   <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
                 </div>
                 <br>
-
-                <!-- The dots/circles -->
-                <div style="text-align:center">
-                  <span class="dot" onclick="showSlides(1, 1)"></span>
-                  <span class="dot" onclick="currentSlide(2, 1)"></span>
-                  <span class="dot" onclick="currentSlide(3, 1)"></span>
-                </div>
               </div>
           </div>
         </section>        
