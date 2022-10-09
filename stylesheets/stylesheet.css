@@ -347,10 +347,11 @@ footer a:hover {
 }
 
 .circle{
-  width: 150px;
-  height:150px;
+  height:250px;
   border-radius: 50%;
   overflow:hidden;  
+  float: left;
+  margin: 15px;
 }
 
 /* The hero image */
