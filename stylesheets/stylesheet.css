@@ -298,13 +298,6 @@ footer a:hover {
   color: #444;
 }
 
-.circle{
-  width: 100px;
-  height:100px;
-  border-radius: 50%;
-  overflow:hidden;
-}
-
 .white {
   background: #ffffff;
   border-color: #303030;
@@ -351,6 +344,13 @@ footer a:hover {
   max-height: 250px;
   float: left;
   margin: 15px;
+}
+
+.circle{
+  width: 150px;
+  height:150px;
+  border-radius: 50%;
+  overflow:hidden;  
 }
 
 /* The hero image */
