@@ -116,6 +116,8 @@ header h2 {
   gap: 20px;
   text-align: center;
   padding: 40px 0;
+  max-width: 70%;
+  margin: 0 auto;
 }
 
 .profile-image {
@@ -164,7 +166,6 @@ ul, ol, dl {
   margin-bottom: 20px;
 }
 
-
 /* COMMON STYLES */
 
 hr {
@@ -204,7 +205,6 @@ form {
   background: #f2f2f2;
 
 }
-
 
 h1 {
   font-size: 32px;
@@ -294,48 +294,127 @@ footer a:hover {
   color: #444;
 }
 
-.container {
-  max-width: 1000px;
+.projects-section,
+.insights-section {
+  width: 70%;
   margin: 0 auto;
-  padding: 20px;
 }
 
-.project-grid {
+.projects-section .project-cards,
+.insights-section .insights-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 30px;
+  margin-bottom: 30px;
+}
+
+.projects-section .project-card,
+.insights-section .insights-card {
+  position: relative;
+  max-width: 100%; /* Set the maximum width relative to the display */
+  height: 400px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box; /* Include padding in the total width */
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-direction: column;
+  align-items: center; /* Center the title and image vertically */
+  justify-content: center; /* Center the title and image horizontally */
+  padding: 20px; /* Add padding around the card */
 }
 
-.project {
-  flex: 1 0 300px;
-  background-color: #fff;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.projects-section .project-card h3,
+.insights-section .insights-card h3 {
+  margin-top: 0; /* Remove the default margin for the title */
+  text-align: left; /* Align the title to the left */
+  padding-left: 20px; /* Add left padding to the title */
+}
+
+.projects-section .project-card img,
+.insights-section .insights-card img {
+  width: auto;
+  height: 90%;
+  max-width: 95%;
+  object-fit: cover;
+}
+
+.projects-section .project-card-overlay,
+.insights-section .insights-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
   padding: 20px;
-}
-
-.project-image {
   width: 100%;
-  border-radius: 4px;
-}
-
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #333;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+
+.projects-section .project-card:hover .project-card-overlay,
+.insights-section .insights-card:hover .insights-card-overlay {
+  opacity: 1;
+}
+
+.projects-section .project-card-overlay {
+  display: none;
+}
+
+.projects-section .project-card:hover img,
+.insights-section .insights-card:hover img {
+  opacity: 0.5;
+}
+
+.projects-section .project-card:hover .project-card-overlay,
+.insights-section .insights-card:hover .insights-card-overlay {
+  display: flex;
+}
+
+.section-button {  
+  display: block;
+  width: 200px;
   border-radius: 4px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
+  background-color: #ffffff;
+  border: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 1em;
+  padding: 20px;
+  transition: all 0.5s;
+  cursor: pointer;  
+  margin: 0 auto;
+  margin-bottom: 15px;
 }
 
-.button:hover {
-  background-color: #555;
+.section-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
-.white {
-  background-color: #fff;
-  padding: 40px 0;
+.section-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.section-button:hover span {
+  padding-right: 25px;
+}
+
+.section-button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 /* The hero image */
@@ -352,7 +431,6 @@ footer a:hover {
   border: none; /* Remove the border */
   box-shadow: none; /* Remove the box shadow */
 }
-
 
 /* Place text in the middle of the image */
 .hero-text {
@@ -376,35 +454,10 @@ footer a:hover {
   box-shadow: none; /* Remove the box shadow */
 }
 
-/* #Media Queries
-================================================== */
-
-/* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) { }
-
-/* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 768px) and (max-width: 959px) { }
-
-/* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {
-  header {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  #downloads {
-    margin-bottom: 25px;
-  }
-  #download-zip, #download-tar-gz {
-    display: none;
-  }
-  .inner {
-    width: 94%;
-    margin: 0 auto;
+@media (max-width: 768px) {
+  .projects-section,
+  .insights-section,
+  .intro-container {
+    width: 98%;
   }
 }
-
-/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) { }
-
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) { }
