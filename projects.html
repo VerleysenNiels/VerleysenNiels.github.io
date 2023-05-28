@@ -7,173 +7,98 @@
     <meta name="description" content="The portfolio of Niels Verleysen, Senior Data Scientist (AI R&D consultant) at Verhaert Masters in Innovation. Get an overview of different artificial intelligence projects worked on by Niels Verleysen for school, self-study and just for fun.">
     <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="javascripts\timeline.js"></script>
     <title>Niels Verleysen - Projects</title>
   </head>
 
   <body>
     <header>
-      <div class="hero-image-secondary">
-        <div class="hero-text">
-          <h1>Projects</h1>
+      <div class="hero-image-main">
+        <div class="hero-container">
+          <h1 class="hero-text">Projects</h1>
           <section id="downloads" class="clearfix">
             <a href="https://verleysenniels.github.io/" id="return-home" class="button"><span>Back to homepage</span></a>
           </section>
         </div>
       </div>
     </header>
-        
-    <div id="container">
-      <div class="inner">
-        <section id="main_content">     
-          <div class="white">
-            <h2><a id="Projects" class="anchor" href="#projects" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Finished projects</h2>
-            
-            <div class="container">
-              <div class="card">
-                <div>
-                  <h3>arXiv summarizer with PyTorch and HuggingFace</h3>
-                  <img src="https://github.com/VerleysenNiels/arxiv-summarizer/blob/master/demo/arxiv_demo.gif?raw=true" align=”left” class="left"/>
-                  <p>When working with transformers in this day and age, you can't go around HuggingFace. This platform is truly amazing, offering datasets, pretrained models, courses and so much more on transformers. In my study objective to dive into transformers I therefore wanted to create a number of projects using HuggingFace to get some more experience with it. This being one of several projects.</p>
-                </div>
-                <a href="https://github.com/VerleysenNiels/arxiv-summarizer" id="transformers101" class="button"><span>Take a look at the repository</span></a>
-                <a href="https://huggingface.co/NielsV/led-arxiv-10240" id="transformers101" class="button"><span>Use the model yourself</span></a>
-              </div>
+    
+    <div class="ag-timeline-block">
+      <section class="ag-section">
+        <div class="ag-format-container">
+          <div class="js-timeline ag-timeline">
+            <div class="js-timeline_line ag-timeline_line">
+              <div class="js-timeline_line-progress ag-timeline_line-progress"></div>
             </div>
+            <div class="ag-timeline_list">
 
-            <div class="container">
-              <div class="card">
-                <div>
-                  <h3>Reddit TLDR with PyTorch and HuggingFace</h3>
-                  <img src="https://github.com/VerleysenNiels/arxiv-summarizer/blob/master/demo/reddit_demo.gif?raw=true" align=”left” class="left"/>
-                  <p>When working with transformers in this day and age, you can't go around HuggingFace. This platform is truly amazing, offering datasets, pretrained models, courses and so much more on transformers. In my study objective to dive into transformers I therefore wanted to create a number of projects using HuggingFace to get some more experience with it. This being one of several projects.</p>
-                </div>
-                <a href="https://github.com/VerleysenNiels/arxiv-summarizer" id="transformers101" class="button"><span>Take a look at the repository</span></a>
-                <a href="https://huggingface.co/NielsV/distilbart-cnn-6-6-reddit" id="transformers101" class="button"><span>Use the model yourself</span></a>
-              </div>
-            </div>
-
-            <div class="container">
-              <div class="card">
-                <div>
-                  <h3>Transformer in PyTorch</h3>
-                  <img src="../images/showcase/transformer.png" align=”left” class="left"/>
-                  <p>In this repository I implemented the transformer architecture, as presented in the paper "Attention is all you need", from scratch in PyTorch.</p>
-                </div>
-                <a href="https://github.com/VerleysenNiels/transformers-pytorch" id="transformers101" class="button"><span>Take a look at the repository</span></a>
-              </div>
-            </div>
-
-            <div class="container">
-              <div class="card">
-                <div>
-                  <h3>Small computer vision apps</h3>
-                  <img src="https://github.com/VerleysenNiels/small_computer_vision_apps/raw/master/face_detector/examples/face_blur.gif?raw=true" align=”left” class="left"/>
-                  <p>In this repository I built a number of small computer vision python programs. These include a face detector and anonymizer, a smart document scanner that automatically crops, transforms and enhances a document in a picture, an object tracker based on color and finally also a script that detects when someone's eyes are closed. This was more meant as a quick refresher of quite basic computer vision functionalities for myself, but I'm happy to share the results.</p>
-                </div>
-                <a href="https://github.com/VerleysenNiels/small_computer_vision_apps" id="opencv" class="button"><span>Take a look at the repository</span></a>
-              </div>
-            </div>
-
-            <div class="container">
-              <div class="card">
-                <div>
-                  <h3>Deep learning from scratch</h3>
-                  <img src="../images/insights/monkey.jpg" align=”left” class="left"/>
-                  <p>In this project I implemented a simple deep learning framework from scratch to go along with my blogs under the same name. Each notebook is linked to one of the blogs. These start with the mathematics behind a forward pass and how we can efficiently turn this into some classes to create custom neural networks. Then I implemented the basic backpropagation algorithm for these custom networks and test it on an example with dummy data. In the final part I show some techniques to further improve the training process, for instance by adding minibatch gradient descent, momentum and RMSProp.</p>
-                </div>
-                <a href="https://github.com/VerleysenNiels/Deep-learning-101" id="dl101" class="button"><span>Take a look at the repository</span></a>
-                <a href="https://medium.com/@niels.verleysen/deep-learning-from-scratch-neurons-layers-activations-121f61849ba2" id="tempmod-view" class="button"><span>Read the first blog</span></a>
-              </div>
-            </div>  
-            
-            <div class="container">
-              <div class="card">
-                <div>
-                  <h3>YOLO object detector with PyTorch</h3>
-                  <img src="../images/showcase/yolo-showcase-1.gif" align=”left” class="left"/>
-                  <p>This repository contains an implementation of the YoloV3 network (pretrained) in PyTorch. The provided script reads a video, applies detection and shows the video with the detections drawn on it. I did not add any commandline arguments, so changing the configuration and input video should be done in the code itself (yolo.py).</p>
-                </div>
-                <a href="https://github.com/VerleysenNiels/Pytorch-YOLO" id="yolo" class="button"><span>Take a look at the repository</span></a>
-              </div>
-            </div>  
-
-            <div class="container">
-              <div class="card">
-                <div>
-                  <h3>Text generator with Long Short-Term Memory networks</h3>
-                  <img src="../images/showcase/text-gen-showcase.gif" align=”left” class="left"/>
-                  <p>I did this small project while still studying, the idea was to construct and train an LSTM network to write text by reading a text file. When trained this network can be used to generate new text based on what it has read before. Of course I did not know much about language models, so I made the model predict the next character given a sequence of 100 characters. This is a nice example of why word embeddings are very important. In the end I did manage to get a model that mostly writes correct words, but without having much meaning in the written sentences.</p>
-                </div>
-                <a href="https://github.com/VerleysenNiels/Textgeneration_with_RNN" id="textrnn-view" class="button"><span>Take a look at the repository</span></a>
-              </div>
-            </div>
-            
-            <div class="container">
-              <div class="card">
-                <div>
-                  <h3>Thesis: Temporal modeling for safer spacecrafts</h3>
-                  <img src="../images/showcase/temporal-mod-showcase.gif" align=”left” class="left"/>
-                  <p>Main project of my thesis. This is a proof-of-concept unsupervised anomaly detection system for spacecrafts. But in general, it can also be used to monitor any system with (a lot of) sensors. This system is based on an LSTM network that learns to predict future observations of the sensors of the system. These predictions can then be used to detect anomalies and report a ranking of the sensors based on their error. To train and test this system I was able to use one year of sensor measurements of the Mars Express orbiter (provided by the European Space Agency). In the testing phase the system was able to quickly detect deviations of single or multiple sensors.</p>
-                </div>
-                <a href="https://github.com/VerleysenNiels/Temporal-modeling-for-safer-spacecrafts" id="tempmod-view" class="button"><span>Take a look at the repository</span></a>
-              </div>
-            </div>
-
-            <div class="container">
-              <div class="card">
-                <div>
-                  <h3>Pattern constructing swarm in MASON</h3>
-                  <img src="../images/showcase/five_rectangles_bridge.gif" align=”left” class="left"/>
-                  <p>In this project I first recreated the self-organizing kilobot swarm from the WYSS Institute in the MASON environment. This swarm can arrange itself in any given shape, as long as this shape exists out of one piece. The bots build up a gradient field around some seed bots and use this to determine their location. By knowing their location these bots can then determine when they should join the shape. I extended this system with the idea of bridge-forming, enabling the bots to construct multiple shapes at once. The current bridge-forming principle is not completely stable, some ideas are given in the paper to solve this problem.</p>
-                </div>
-                <a href="https://github.com/VerleysenNiels/Self-assembling-swarm" id="tempmod-view" class="button"><span>Take a look at the repository</span></a>
-                <a href="https://github.com/VerleysenNiels/Self-assembling-swarm/blob/master/Paper_Self_Assembling_Swarm.pdf" id="tempmod-view" class="button"><span>Read the paper</span></a>
-              </div>
-            </div>
-
-            <div class="container">
-              <div class="card">
-                <div>
-                  <h3>Anomaly detection on synthetic data</h3>
-                  <img src="../images/showcase/lstm-periodic-showcase.gif" align=”left” class="left"/>
-                  <p>Little brother of the main project for my thesis (Temporal modeling for safer spacecrafts, 2020). This is a proof-of-concept unsupervised anomaly detection system trained on a single synthetic signal. This system is based on an LSTM network that learns to predict future values of the signal, which are then used to detect anomalies through a threshold on the loss. Using a synthetic signal allows for testing different aspects and capabilities of the system. The system is able to detect deviations in amplitude and frequency of the signal. It is however unable to reliably detect the decay of a high frequency component of a signal.</p>
-                </div>
-                <a href="https://github.com/VerleysenNiels/LSTM_Periodic_Function" id="tempmod-view" class="button"><span>Take a look at the repository</span></a>
-              </div>
-            </div>
-
-            <div class="container">
-              <div class="card">
-                <div>
-                  <h3>Reinforcement learning in OpenAi Gym</h3>
-                  <img src="../images/showcase/qlearning-showcase.gif" align=”left” class="left"/>
-                  <p>As part of my thesis (Reinforcement Learning: with applications to robotic control, 2019) I tested different versions of the Q-Learning algorithm in the Gym environment. With Reinforcement Learning an agent can be trained to do certain tasks by reinforcing good behaviour and punishing bad behaviour. In this case the agent needs to learn to play a videogame like a human, this means that it gets a frame as input and needs to decide which button to press in order to gain points and to avoid losing. In my thesis I then applied this algorithm to a simulated robotic arm in order to make it pick up boxes.</p>
-                </div>
-                <a href="https://github.com/VerleysenNiels/Q-Learning" id="tempmod-view" class="button"><span>Take a look at the repository</span></a>
-                <a href="https://github.com/VerleysenNiels/Q-Learning/blob/master/Paper_Deep_Reinforcement_Learning.pdf" id="tempmod-view" class="button"><span>Read the paper</span></a>
-              </div>
-            </div>
-
-            <div class="container">
-                <div class="card">
-                  <div>
-                    <h3>Indoor location tracking in museums</h3>
-                    <p>In this group project we applied computer vision to determine the location of a user inside a museum. A camera, either mounted or via a smartphone, sees what the user sees while walking around in the museum. The program then detects paintings and extracts them from the video frame. The ID of the painting can be determined by feature matching and as the system knows where every painting is located, it can determine the location of the user. To improve the accuracy we then eliminate estimated locations that are impossible, for instance a user cannot jump from one side of the museum to another between two frames.</p>
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2023</div>
                   </div>
-                  <a href="https://github.com/VerleysenNiels/Project_Computervisie" id="tempmod-view" class="button"><span>Take a look at the repository</span></a>
-                  <a href="https://github.com/VerleysenNiels/Project_Computervisie/blob/master/Indoor%20Location%20Tracking%20in%20Museums%20by%20Painting%20Detection%20and%20Matching.pdf" id="tempmod-view" class="button"><span>Read the paper</span></a>
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Creating an arXiv Summarizer with PyTorch and HuggingFace</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <img src="https://github.com/VerleysenNiels/arxiv-summarizer/blob/master/demo/arxiv_demo.gif?raw=true" class="ag-timeline-card_img" alt="arXiv Summarizer"/>
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_desc">
+                        In order to work effectively with transformers, HuggingFace is an indispensable platform. It offers a wide range of resources including datasets, pretrained models, courses, and more, specifically tailored for transformer-based models. To enhance my understanding and expertise in this area, I embarked on a project to develop an arXiv summarizer utilizing HuggingFace.
+                      </div>
+                      <div class="ag-timeline-card_buttons">
+                        <a href="https://github.com/VerleysenNiels/arxiv-summarizer" class="button"><span>Explore the repository</span></a>
+                        <a href="https://huggingface.co/NielsV/led-arxiv-10240" class="button"><span>Try out the model</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div> 
+
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Season 12</div>
+                  </div>
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2020</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-12.png" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_title">Season 12</div>
+                      <div class="ag-timeline-card_desc">
+                        Donec pede justo, fringilla
+                        vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+                        venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
+                        tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+                        tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+                        Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra
+                        nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
                 </div>
               </div>
-
+              
+            </div>
           </div>
-        </section>        
-      </div>
-    </div>
+        </div>
+      </section>
+    </div>  
+
+          
     
     <footer>
       Created by Niels Verleysen.
