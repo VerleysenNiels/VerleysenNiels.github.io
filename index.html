@@ -9,15 +9,14 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-    <script src="javascripts/main.js"></script>
     <title>Niels Verleysen</title>
   </head>
 
   <body>
     <header>
       <div class="hero-image-main">
-        <div class="hero-text">
-          <h1>Niels Verleysen</h1>
+        <div class="hero-container">
+          <h1 class="hero-text">Niels Verleysen</h1>
           <section id="downloads" class="clearfix">
             <a href="https://www.linkedin.com/in/niels-verleysen-34bb50175/" id="view-on-linkedin" class="button"><span>LinkedIn</span></a>
             <a href="https://medium.com/@niels.verleysen" id="view-on-medium" class="button"><span>Medium</span></a>
@@ -27,118 +26,79 @@
         </div>
       </div>
     </header>
-        
-    <div id="container">
-      <div class="inner">
 
-        <section id="main_content">
-          <div class="white">
-            <h2><a id="about" class="anchor" href="#about" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About this page and myself.</h2>
-            <img src="../images/generated_niels_1_better.png" align=”left” class="circle"/>
-            <p>Welcome to my personal github page! &#128400  As you can see this page is meant as a portfolio of my side-projects and blogs. I'm currently employed as a senior data scientist at Verhaert, an innovation consultancy company trusted by some of the largest companies in their respective fields. &#128640 My role can be best described as applied datascience research for product development (both physical and digital products), although I work with non-ML algorithms too. I enjoy learning and creating new things, even if they are not always very useful. &#128584</p>
-            <p>Fun fact: this digital painting was generated with a stable diffusion model I finetuned on pictures of myself! It's definitely something I recommend everyone with the ability to try out as well! &#128525</p> 
-          </div>
-          
-          <div class="white">
-            <h2><a id="Projects" class="anchor" href="#latest" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Projects</h2>
-            <div class="container">
-                
-                <div class="slideshow-container">     
-                             
-                  <div class="slides1">
-                    <div class="card">
-                      <div>
-                        <h3>Transformer in PyTorch</h3>
-                        <img src="../images/showcase/transformer.png" align=”left” class="left"/>
-                        <p>In this repository I implemented the transformer architecture, as presented in the paper "Attention is all you need", from scratch in PyTorch.</p>
-                      </div>
-                      <a href="https://verleysenniels.github.io/projects" id="tempmod-view" class="button"><span>All projects</span></a>                      
-                    </div> 
-                  </div>
-
-                  <div class="slides1" hidden>
-                    <div class="card">
-                      <div>
-                        <h3>Thesis: Temporal modeling for safer spacecrafts</h3>
-                        <img src="../images/showcase/temporal-mod-showcase.gif" align=”left” class="left"/>
-                        <p>Main project of my thesis. This is a proof-of-concept unsupervised anomaly detection system for spacecrafts. But in general, it can also be used to monitor any system with (a lot of) sensors. This system is based on an LSTM network that learns to predict future observations of the sensors of the system. These predictions can then be used to detect anomalies and report a ranking of the sensors based on their error. To train and test this system I was able to use one year of sensor measurements of the Mars Express orbiter (provided by the European Space Agency).</p>
-                      </div>
-                      <a href="https://verleysenniels.github.io/projects" id="tempmod-view" class="button"><span>All projects</span></a>
-                    </div>
-                  </div>
-
-                  <div class="slides1" hidden>
-                    <div class="card">
-                      <div>
-                        <h3>Reinforcement learning in OpenAi Gym</h3>
-                        <img src="../images/showcase/qlearning-showcase.gif" align=”left” class="left"/>
-                        <p>As part of my thesis (Reinforcement Learning: with applications to robotic control, 2019) I tested different versions of the Q-Learning algorithm in the Gym environment. With Reinforcement Learning an agent can be trained to do certain tasks by reinforcing good behaviour and punishing bad behaviour. In this case the agent needs to learn to play a videogame like a human, this means that it gets a frame as input and needs to decide which button to press in order to gain points and to avoid losing. In my thesis I then applied this algorithm to a simulated robotic arm in order to make it pick up boxes.</p>
-                      </div>
-                      <a href="https://verleysenniels.github.io/projects" id="tempmod-view" class="button"><span>All projects</span></a>
-                    </div>
-                  </div>
-
-                  <!-- Next and previous buttons -->
-                  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-                  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-                </div>
-                <br>
+    <div class="intro-container">
+      <div class="intro-text">
+        <h2>About Me and This Page</h2>
+        <p>Welcome to my personal webpage! &#128400 I am excited to share my portfolio of side-projects and blogs with you. Currently, I hold the position of Senior Data Scientist at Verhaert, an innovation consultancy company trusted by industry leaders in their respective fields. &#128640 My role primarily revolves around applied data science research for product development, encompassing both physical and digital products. My expertise extends beyond ML algorithms as well, I thoroughly enjoy exploring new domains and creating innovative solutions.</p>
+        <p>Here's a fun fact: The digital painting you see was generated using a stable diffusion model that I fine-tuned on pictures of myself! It's an intriguing process that I highly recommend trying out if you have the opportunity. &#128525</p>
+      </div>
+      <img src="../images/generated_niels_1_better.png" class="profile-image" alt="Profile Image">
+    </div>                          
+      
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-cards">
+          <div class="project-card">
+            <h3>Transformer in PyTorch</h3>
+            <img src="../images/showcase/transformer.png" alt="Transformer" />
+            <div class="project-card-overlay">
+              <p>In this repository, I implemented the transformer architecture from scratch in PyTorch.</p>
             </div>
           </div>
-        
-          <div class="white">
-            <h2><a id="Blogs" class="anchor" href="#blogs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Blogs & Insights</h2>          
-              <div class="container">
-                <!-- Slideshow container -->
-                <div class="slideshow-container">
-
-                  <div class="slides2">
-                    <div class="card">
-                      <div>
-                        <h3>Why we should be worried about the whole “Sentient AI” story</h3>
-                        <img src="../images/insights/small-robot.jpg" align=”left” class="left"/>
-                        <p>An engineer at Google makes a claim that an AI has become sentient. This should have us worried, but not for the reasons you might think…</p>
-                      </div>
-                      <a href="https://verleysenniels.github.io/insights" id="tempmod-view" class="button"><span>All insights</span></a>     
-                    </div>
-                  </div>
-
-                  <div class="slides2" hidden>
-                    <div class="card">
-                      <div>
-                        <h3>Uncovering the Simple Genius behind ChatGPT</h3>
-                        <img src="../images/insights/keyboard.jpg" align=”left” class="left"/>
-                        <p>The release of ChatGPT has been dominating headlines and rightfully so. The latest chatbot by OpenAI is so good, you would sometimes forget you were chatting with a computer. The core technology behind this marvel? Reinforcement Learning from Human Feedback! In this blog I explain how this technique can be applied to language tasks.</p>
-                      </div>
-                      <a href="https://verleysenniels.github.io/insights" id="tempmod-view" class="button"><span>All insights</span></a>     
-                    </div>
-                  </div>
-
-                  <div class="slides2" hidden>
-                    <div class="card">
-                      <div>
-                        <h3>The future of energy-efficient AI systems</h3>
-                        <img src="../images/insights/monkey.jpg" align=”left” class="left"/>
-                        <p>A webinar about making AI systems more sustainable, with a focus on connected devices and how resource-aware intelligence can make a big difference. This talk is a part of the 2022 InnoDays hosted by Verhaert.</p>
-                      </div>
-                      <a href="https://verleysenniels.github.io/insights" id="tempmod-view" class="button"><span>All insights</span></a>                      
-                    </div> 
-                  </div>
-
-                  <!-- Next and previous buttons -->
-                  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-                  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-                </div>
-                <br>
-              </div>
+          <div class="project-card">
+            <h3>Thesis: Temporal modeling for safer spacecrafts</h3>
+            <img src="../images/showcase/temporal-mod-showcase.gif" alt="Temporal Modeling" />
+            <div class="project-card-overlay">
+              <p>Main project of my thesis. This is a proof-of-concept unsupervised anomaly detection system for spacecrafts.</p>
+            </div>
           </div>
-        </section>        
+          <div class="project-card">
+            <h3>Reinforcement learning in OpenAI Gym</h3>
+            <img src="../images/showcase/qlearning-showcase.gif" alt="Reinforcement Learning" />
+            <div class="project-card-overlay">
+              <p>Tested different versions of the Q-Learning algorithm in the Gym environment.</p>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="section-button"><span>View All Projects</span></a>
       </div>
-    </div>
+    </section>
     
+    <section id="insights" class="insights-section">
+      <div class="container">
+        <h2>Blogs & Insights</h2>
+        <div class="insights-cards">
+          <div class="insights-card">
+            <h3>Why we should be worried about the whole “Sentient AI” story</h3>
+            <img src="../images/insights/small-robot.jpg" alt="Sentient AI" />
+            <div class="insights-card-overlay">
+              <p>An engineer at Google makes a claim that an AI has become sentient. This should have us worried, but not for the reasons you might think…</p>
+            </div>
+          </div>
+          <div class="insights-card">
+            <h3>Uncovering the Simple Genius behind ChatGPT</h3>
+            <img src="../images/insights/keyboard.jpg" alt="ChatGPT" />
+            <div class="insights-card-overlay">
+              <p>The release of ChatGPT has been dominating headlines and rightfully so. The latest chatbot by OpenAI is so good, you would sometimes forget you were chatting with a computer.</p>
+            </div>
+          </div>
+          <div class="insights-card">
+            <h3>The future of energy-efficient AI systems</h3>
+            <img src="../images/insights/monkey.jpg" alt="Energy-Efficient AI" />
+            <div class="insights-card-overlay">
+              <p>A webinar about making AI systems more sustainable, with a focus on connected devices and how resource-aware intelligence can make a big difference.</p>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="section-button"><span>All Insights</span></a>
+      </div>
+    </section>
+    
+
     <footer>
-      Created by Niels Verleysen.
-      <a href='https://www.freepik.com/free-photos-vectors/banner'>Banner vector created by kjpargeter - www.freepik.com</a>
+      Created by Niels Verleysen and ChatGPT &#128521;
     </footer>
     
   </body>
