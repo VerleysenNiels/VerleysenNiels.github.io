@@ -4,198 +4,451 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="The portfolio of Niels Verleysen, Senior Data Scientist (AI R&D consultant) at Verhaert Masters in Innovation. Get an overview of insights on artificial intelligence given by Niels Verleysen through blogs and talks.">
+    <meta name="description" content="The portfolio of Niels Verleysen, Senior Data Scientist (AI R&D consultant) at Verhaert Masters in Innovation. Get an overview of different artificial intelligence projects worked on by Niels Verleysen for school, self-study and just for fun.">
     <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>Niels Verleysen - Projects</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="javascripts\timeline.js"></script>
+    <title>Niels Verleysen - Insights</title>
   </head>
 
   <body>
     <header>
-      <div class="hero-image-secondary">
-        <div class="hero-text">
-          <h1>Insights</h1>
+      <div class="hero-image-main">
+        <div class="hero-container">
+          <h1 class="hero-text">Insights</h1>
           <section id="downloads" class="clearfix">
-            <a href="https://verleysenniels.github.io/" id="return-home" class="button"><span>Back to homepage</span></a>
+            <a href="https://nielsverleysen.com/" id="return-home" class="button"><span>Back to homepage</span></a>
           </section>
         </div>
       </div>
     </header>
-        
-    <div id="container">
-      <div class="inner">
-        <section id="main_content">     
-          <div class="white">
-            <h2><a id="Insights" class="anchor" href="#insights" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Published insights</h2>
-            
-            <div class="container">
-              <div class="card">
-                <div>
-                  <h3>AI, the rising star in earth observation</h3>
-                  <img src="../images/insights/space.jpg" align=”left” class="left"/>
-                  <p>In the newspace era, earth observation data has become commercially available for everyone. Numerous opportunities now present themselves through this data. From digital farming to arctic shipping, lots of industries stand to benefit from this. In making these opportunities a reality, AI is playing a crucial role.</p>
-                </div>
-                <a href="https://verhaert.com/insights/blog/ai-rising-star-in-earth-observation/" id="tempmod-view" class="button"><span>Read the blog</span></a>                      
-              </div> 
-            </div>
-            
-            <div class="container">
-              <div class="card">
-                <div>
-                  <h3>Uncovering the Simple Genius behind ChatGPT</h3>
-                  <img src="../images/insights/keyboard.jpg" align=”left” class="left"/>
-                  <p>The release of ChatGPT has been dominating headlines and rightfully so. The latest chatbot by OpenAI is so good, you would sometimes forget you were chatting with a computer. The core technology behind this marvel? Reinforcement Learning from Human Feedback! In this blog I explain how this technique can be applied to language tasks.</p>
-                </div>
-                <a href="https://medium.com/@niels.verleysen/uncovering-the-simple-genius-behind-chatgpt-3a2233e2474e" id="tempmod-view" class="button"><span>Read the blog</span></a>                      
-              </div> 
-            </div>
 
-            <div class="container">
-              <div class="card">
-                <div>
-                  <h3>Designing energy-efficient deep learning algorithms</h3>
-                  <img src="../images/insights/workflow.jpg" align=”left” class="left"/>
-                  <p>Continuing on the theme of sustainable, my colleague Jente and I wrote a perspective sharing different techniques to reduce the energy consumption of neural networks. Key takeaway? Many different techniques exist, but we should prioritize using them from the beginning of the development cycle.</p>
-                </div>
-                <a href="https://verhaert.com/insights/perspectives/designing-energy-efficient-deep-learning-algorithms/" id="tempmod-view" class="button"><span>Read the blog</span></a>                      
-              </div> 
-            </div>
-
-            <div class="container">
-              <div class="card">
-                <div>
-                  <h3>The future of energy-efficient AI systems</h3>
-                  <img src="../images/insights/small-robot.jpg" align=”left” class="left"/>
-                  <p>A webinar about making AI systems more sustainable, with a focus on connected devices and how resource-aware intelligence can make a big difference. This talk is a part of the 2022 InnoDays hosted by Verhaert. The event was centered around the crises going on in the world right now and how innovation can help us deal with them.</p>
-                </div>
-                <a href="https://verhaert.com/insights/webinars/future-of-energy-efficient-ai-systems/" id="tempmod-view" class="button"><span>Watch the talk</span></a>                      
-              </div> 
-            </div>
-
-            <div class="container">
-              <div class="card">
-                <div>
-                  <h3>Predictive maintenance – know when things will break</h3>
-                  <img src="../images/insights/machine.jpg" align=”left” class="left"/>
-                  <p>Performing maintenance is critical to keep appliances, vehicles, manufacturing machines, etc. working correctly. By employing artificial intelligence, you can gain better insights in these machines. With these insights you can optimize the performance, ensure quality and even predict when the machine will break down! </p>
-                </div>
-                <a href="https://verhaert.com/insights/blog/predictive-maintenance-know-when-things-will-break/" id="tempmod-view" class="button"><span>Read the blog</span></a>                      
-              </div> 
-            </div>
-            
-            <div class="container">
-              <div class="card">
-                <div>
-                  <h3>Deep learning from scratch 3: Improving the training process</h3>
-                  <img src="../images/insights/monkey.jpg" align=”left” class="left"/>
-                  <p>The backpropagation algorithm can be quite unstable. Let us look at some improvements: minibatches and the Adam optimization algorithm!</p>
-                </div>
-                <a href="https://medium.com/@niels.verleysen/deep-learning-from-scratch-3-improving-the-training-process-8aa1b886e6f1" id="tempmod-view" class="button"><span>Read the blog</span></a>                      
-              </div> 
-            </div>
-
-            <div class="container">
-              <div class="card">
-                <div>
-                  <h3>Deep learning from scratch 2: backpropagation</h3>
-                  <img src="../images/insights/monkey.jpg" align=”left” class="left"/>
-                  <p>The backpropagation algorithm is a key factor in enabling deep neural networks to learn. Let's take a look under the hood at how it actually works.</p>
-                </div>
-                <a href="https://medium.com/@niels.verleysen/deep-learning-from-scratch-2-backpropagation-dae422b7ca7b" id="tempmod-view" class="button"><span>Read the blog</span></a>                      
-              </div> 
-            </div>
-            
-            <div class="container">
-              <div class="card">
-                <div>
-                  <h3>Deep Learning from scratch: Neurons, Layers & Activations</h3>
-                  <img src="../images/insights/monkey.jpg" align=”left” class="left"/>
-                  <p>Deep learning is a key enabler for many technological advancements. So, how does it work? Let's learn the basics by coding it up in python!</p>
-                </div>
-                <a href="https://medium.com/@niels.verleysen/deep-learning-from-scratch-neurons-layers-activations-121f61849ba2" id="tempmod-view" class="button"><span>Read the blog</span></a>                      
-              </div> 
-            </div>
-
-            <div class="container">
-              <div class="card">
-                <div>
-                  <h3>Why we should be worried about the whole “Sentient AI” story</h3>
-                  <img src="../images/insights/small-robot.jpg" align=”left” class="left"/>
-                  <p>An engineer at Google makes a claim that an AI has become sentient. This should have us worried, but not for the reasons you might think…</p>
-                </div>
-                <a href="https://medium.com/@niels.verleysen/why-we-should-be-worried-about-the-whole-sentient-ai-story-dc212ee322ad" id="tempmod-view" class="button"><span>Read the blog</span></a>
-              </div>
-            </div>
-
-            <div class="container">
-              <div class="card">
-                <div>
-                  <h3>The ultimate roadmap for self-learning products</h3>
-                  <img src="../images/insights/idea.jpg" align=”left” class="left"/>
-                  <p>Did you ever wonder how some intelligent products are so incredibly good at certain tasks? And did you then wonder how you could do this with one of your products? If you did, then you are at the right place, because in this blog we are diving into the world of continuous learning. We’ll discuss what continuous learning is and how this can be applied to almost any product with our handy roadmap. Whether it’s something as simple as a lamp or as complex as a modern car, we’ve got you covered.</p>
-                </div>
-                <a href="https://verhaert.com/insights/blog/the-ultimate-roadmap-for-self-learning-products/" id="tempmod-view" class="button"><span>Read the blog</span></a>
-              </div>
-            </div>
-
-            <div class="container">
-              <div class="card">
-                <div>
-                  <h3>ReThinking NewSpace: The critical role of AI in earth observation</h3>
-                  <img src="../images/insights/space.jpg" align=”left” class="left"/>
-                  <p>Earth observation systems generate huge amounts of data. This is a blessing, but without large scale automated data processing and analysis it can quickly become a curse. In this talk I am interviewed by my colleague Daniel about the unique role that data science, machine learning and artificial intelligence play in making NewSpace data actionable.</p>
-                </div>
-                <a href="https://hightech.lambda-x.com/rethinking-newspace/" id="tempmod-view" class="button"><span>Watch the talk</span></a>
-              </div>
-            </div>
-
-            <div class="container">
-              <div class="card">
-                <div>
-                  <h3>Hybrid AI, spreading AI between edge and cloud</h3>
-                  <img src="../images/insights/keyboard.jpg" align=”left” class="left"/>
-                  <p>A continuation on the edge versus cloud intelligence blog. In this blog, we’ll dive deeper into the hybrid approach and how to distribute the AI model between device and cloud with deep neural networks.</p>
-                </div>
-                <a href="https://verhaert.com/insights/blog/hybrid-ai-spreading-ai-between-edge-and-cloud/" id="tempmod-view" class="button"><span>Read the blog</span></a>
-              </div>
-            </div>
-
-            <div class="container">
-              <div class="card">
-                <div>
-                  <h3>A 4-step guide to choose between edge & cloud for smart home devices</h3>
-                  <img src="../images/insights/pcb.jpg" align=”left” class="left"/>
-                  <p>Have you ever wondered why your smart home devices are rather dumb when you switch off the internet? Turns out, many of these devices are not as bright as you think. They borrow their intelligence from their ‘cloud’ overlords. Maybe you’re entertaining the idea of making your company’s product smart as well. You might wonder: “Why can’t my device think on its own?” In this blog, we’ll dive into the world of central (cloud) vs local (edge) intelligence and share how we weigh these options when we sketch out a new AI design for smart home applications.</p>
-                </div>
-                <a href="https://verhaert.com/insights/blog/4-step-guide-to-choose-between-edge-and-cloud/" id="tempmod-view" class="button"><span>Read the blog</span></a>
-              </div>
-            </div>
-
-            <div class="container">
-              <div class="card">
-                <div>
-                  <h3>Creating true smart homes & appliances powered by edge AI</h3>
-                  <img src="../images/insights/idea.jpg" align=”left” class="left"/>
-                  <p>During the 2021 edition of the Innovation days at Verhaert I gave a talk about edge AI in smart homes and appliances; Today’s smart home devices and appliances aren’t really smart, it is the cloud that is smart. This limits the possibilities of your devices and creates privacy concerns. So how can we make our devices smarter to solve these problems?</p>
-                </div>
-                <a href="https://verhaert.com/insights/webinars/creating-true-smart-homes-and-appliances-powered-by-edge-ai/" id="tempmod-view" class="button"><span>Watch the talk</span></a>
-              </div>
-            </div>
-
-          </div>
-        </section>        
+    <div class="intro-container">
+      <div class="intro-text">
+        <p>Welcome to my collection of blogs, webinars, and public talks. Here, you'll find a diverse range of topics covering technical discussions, business perspectives, and philosophical explorations of artificial intelligence.</p>
+        <p>Explore the latest advancements in AI technology, discover innovative applications across industries, and gain valuable insights into the challenges and opportunities in the AI landscape. From deep learning algorithms and energy-efficient AI systems to smart homes and ethical considerations, these insights offer a comprehensive view of AI's impact on various domains.</p>
       </div>
-    </div>
+    </div>  
+    
+    <div class="ag-timeline-block">
+      <section class="ag-section">
+        <div class="ag-format-container">
+          <div class="js-timeline ag-timeline">
+            <div class="js-timeline_line ag-timeline_line">
+              <div class="js-timeline_line-progress ag-timeline_line-progress"></div>
+            </div>
+            <div class="ag-timeline_list">
+
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2023</div>
+                  </div>
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Talk: Transformers Demystified</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <img src="images\insights\transformerstalk.jpeg" alt="Picture taken during the talk" class="ag-timeline-card_img">
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_desc">
+                        <p>As part of my role at Verhaert, I delivered an internal talk on transformers. The session began with a brief overview of neural networks before delving into the theory and implementation details of transformers. I explained the inner workings of transformers and their applications in various domains, including  natural language processing and computer vision. Additionally, I discussed how we can leverage pretrained models from HuggingFace to enhance our projects for clients. It was an engaging session that explored the power and potential of transformers in the field of AI.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>  
+              
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Blog: AI, the Rising Star in Earth Observation</div>
+                  </div>
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2023</div>
+                  </div>                    
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">                    
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_desc">
+                        <p>In the newspace era, earth observation data has become commercially available for everyone. Numerous opportunities now present themselves through this data. From digital farming to arctic shipping, lots of industries stand to benefit from this. In making these opportunities a reality, AI is playing a crucial role.</p>
+                      </div>
+                      <div class="ag-timeline-card_buttons">
+                        <a href="https://verhaert.com/insights/blog/di/space-security/ai-rising-star-in-earth-observation/" class="button"><span>Read the blog</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2022</div>
+                  </div>
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Blog: Uncovering the Simple Genius behind ChatGPT</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <img src="images\insights\keyboard.jpg" alt="Image of a keyboard" class="ag-timeline-card_img">
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_desc">
+                        <p>The release of ChatGPT has been dominating headlines and rightfully so. The latest chatbot by OpenAI is so good, you would sometimes forget you were chatting with a computer. The core technology behind this marvel? Reinforcement Learning from Human Feedback! In this blog, I explain how this technique can be applied to language tasks.</p>
+                      </div>
+                      <div class="ag-timeline-card_buttons">
+                        <a href="https://medium.com/@niels.verleysen/uncovering-the-simple-genius-behind-chatgpt-3a2233e2474e" class="button"><span>Read the blog</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+              
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">                  
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Blog: Designing energy-efficient deep learning algorithms</div>
+                  </div>
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2022</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <img src="images\insights\workflow.jpg" alt="Image of a workspace" class="ag-timeline-card_img">
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_desc">
+                        <p>Continuing on the theme of sustainability, my colleague Jente and I wrote a perspective sharing different techniques to reduce the energy consumption of neural networks. The key takeaway? Many different techniques exist, but we should prioritize using them from the beginning of the development cycle.</p>
+                      </div>
+                      <div class="ag-timeline-card_buttons">
+                        <a href="https://verhaert.com/insights/blog/di/future-of-energy-efficient-ai-systems/" class="button"><span>Read the blog</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2022</div>
+                  </div>
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Talk: The Future of Energy Efficient AI Systems</div>
+                  </div>                                    
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <video class="ag-timeline-card_img" autoplay loop muted>
+                        <source src="images\insights\Session 3 - The future of energy-efficient AI systems - Trim.webm" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_desc">
+                        <p>Join me and my colleague Bart as we discuss the current issues of AI, particularly deep learning technologies, due to their high power consumption and associated costs and carbon emissions. We explore new techniques like resource-aware AI to address these challenges and pave the way for energy-efficient AI systems.</p>
+                      </div>                      
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>              
+
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">                  
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Blog: Predictive maintenance – know when things will break</div>
+                  </div>
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2022</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <img src="images\insights\machine.jpg" alt="Image of a machine" class="ag-timeline-card_img">
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_desc">
+                        <p>Performing maintenance is critical to keep appliances, vehicles, manufacturing machines, etc. working correctly. By employing artificial intelligence, you can gain better insights into these machines. With these insights, you can optimize performance, ensure quality, and even predict when the machine will break down!</p>
+                      </div>
+                      <div class="ag-timeline-card_buttons">
+                        <a href="https://verhaert.com/insights/blog/di/industry/predictive-maintenance-know-when-things-will-break/" class="button"><span>Read the blog</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+              
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2022</div>
+                  </div>
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Blog: Deep learning from scratch 3: Improving the training process</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">                    
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_desc">
+                        <p>The backpropagation algorithm can be quite unstable. In this blog post, I discuss some improvements, including the use of minibatches and the Adam optimization algorithm, to enhance the training process in deep learning models.</p>
+                      </div>
+                      <div class="ag-timeline-card_buttons">
+                        <a href="https://medium.com/@niels.verleysen/deep-learning-from-scratch-3-improving-the-training-process-8aa1b886e6f1" class="button"><span>Read the blog</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Blog: Deep learning from scratch 2: backpropagation</div>
+                  </div>
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2022</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_desc">
+                        <p>The backpropagation algorithm is a key factor in enabling deep neural networks to learn. In this blog post, I dive into the inner workings of backpropagation and explain how it helps optimize the parameters of deep learning models.</p>
+                      </div>
+                      <div class="ag-timeline-card_buttons">
+                        <a href="https://medium.com/@niels.verleysen/deep-learning-from-scratch-2-backpropagation-dae422b7ca7b" class="button"><span>Read the blog</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+              
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2022</div>
+                  </div>
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Blog: Deep Learning from scratch: Neurons, Layers & Activations</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_desc">
+                        <p>Deep learning is a powerful technology driving many advancements. In this blog post, I dive into the fundamentals of deep learning, exploring the concepts of neurons, layers, and activations. Through Python coding examples, we'll gain a solid understanding of the basics.</p>
+                      </div>
+                      <div class="ag-timeline-card_buttons">
+                        <a href="https://medium.com/@niels.verleysen/deep-learning-from-scratch-neurons-layers-activations-121f61849ba2" class="button"><span>Read the blog</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+              
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Blog: Why we should be worried about the whole "Sentient AI" story</div>
+                  </div>                  
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2022</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <img src="images\insights\small-robot.jpg" alt="An image of a tiny robot" class="ag-timeline-card_img">
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_desc">
+                        <p>An engineer at Google claims that an AI has become sentient. In this blog post, I discuss why this claim should have us concerned, but not for the reasons that immediately come to mind. Join me as we explore the implications of the "Sentient AI" narrative.</p>
+                      </div>
+                      <div class="ag-timeline-card_buttons">
+                        <a href="https://medium.com/@niels.verleysen/why-we-should-be-worried-about-the-whole-sentient-ai-story-dc212ee322ad" class="button"><span>Read the blog</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+              
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2022</div>
+                  </div>
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Blog: The ultimate roadmap for self-learning products</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <img src="images\insights\idea.jpg" alt="A picture of a notepad" class="ag-timeline-card_img">
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_desc">
+                        <p>Have you ever wondered how some intelligent products excel at specific tasks? Are you interested in applying continuous learning to your own products? In this blog post, we explore the world of continuous learning and provide a comprehensive roadmap for implementing self-learning capabilities. Whether it's a simple lamp or a complex modern car, our guide has you covered.</p>
+                      </div>
+                      <div class="ag-timeline-card_buttons">
+                        <a href="https://verhaert.com/insights/blog/di/fmcg/the-ultimate-roadmap-for-self-learning-products/" class="button"><span>Read the blog</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+              
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">                  
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Talk: ReThinking NewSpace: The critical role of AI in earth observation</div>
+                  </div>
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2022</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <video class="ag-timeline-card_img" autoplay loop muted>
+                        <source src="images\insights\2022 - ReThinking NewSpace Webinar - Session 4 - Trim.webm" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_desc">
+                        <p>Earth observation systems generate massive amounts of data, which can be both a blessing and a curse. In this talk, I discuss with my colleague Daniel the unique role that data science, machine learning, and artificial intelligence play in making NewSpace data actionable. Discover how AI can revolutionize earth observation and enable us to extract valuable insights from the vast amounts of collected data.</p>
+                      </div>
+                      <div class="ag-timeline-card_buttons">
+                        <a href="https://hightech.lambda-x.com/rethinking-newspace/" class="button"><span>Watch the talk</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+              
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2022</div>
+                  </div>
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Blog: Hybrid AI, spreading AI between edge and cloud</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_desc">
+                        <p>In this blog, we explore the concept of hybrid AI and its role in distributing AI models between edge devices and the cloud. Discover how deep neural networks can be leveraged to achieve a balanced approach, allowing for efficient and effective AI processing at both the edge and in the cloud.</p>
+                      </div>
+                      <div class="ag-timeline-card_buttons">
+                        <a href="https://verhaert.com/insights/blog/pi/industry/artificial-intelligence/hybrid-ai-spreading-ai-between-edge-and-cloud/" class="button"><span>Read the blog</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+              
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">                  
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Blog: A 4-step guide to choose between edge & cloud...</div>
+                  </div>
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2022</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">                    
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_desc">
+                        <p>Discover how to make smarter decisions when designing AI for smart home devices. This blog provides a 4-step guide for choosing between edge and cloud intelligence, enabling you to create devices that can function even when the internet connection is unavailable. Explore the benefits and considerations of both approaches and gain insights into optimizing your product's intelligence.</p>
+                      </div>
+                      <div class="ag-timeline-card_buttons">
+                        <a href="https://verhaert.com/insights/blog/fmcg/artificial-intelligence/4-step-guide-to-choose-between-edge-and-cloud/" class="button"><span>Read the blog</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+              
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">                  
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2021</div>
+                  </div>
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Talk: Creating true smart homes & appliances powered by edge AI</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <video class="ag-timeline-card_img" autoplay loop muted>
+                        <source src="images\insights\Verhaert InnoDays - MyTechnology - Creating true smart homes  appliances powered by edge AI (NVE) - Trim.webm" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_desc">
+                        <p>Learn how edge AI can revolutionize smart homes and appliances. This talk, presented during the Innovation days at Verhaert in 2021, explores the limitations of current smart devices and appliances, where the cloud is responsible for most of the intelligence. Discover how edge AI can make devices smarter, enhance their capabilities, and address privacy concerns. Watch the talk to unlock the potential of true smart homes and appliances.</p>
+                      </div>
+                      <div class="ag-timeline-card_buttons">
+                        <a href="https://verhaert.com/insights/webinars/pi/fmcg/artificial-intelligence/creating-true-smart-homes-and-appliances-powered-by-edge-ai/" class="button"><span>Watch the talk</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>              
+              
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>          
     
     <footer>
-      Created by Niels Verleysen.
-      <a href='https://www.freepik.com/free-photos-vectors/banner'>Banner vector created by kjpargeter - www.freepik.com</a>
+      Created by Niels Verleysen and ChatGPT &#128521;
     </footer>
-    
+        
   </body>
-</html>
+</html>           
+
+            
+
+
+            
+            
+           
+
+ 
+    
