@@ -625,7 +625,7 @@ footer a:hover {
   justify-content: center;
   align-items: center;
   border: none; /* Remove the border */
-  box-shadow: none; /* Remove the box shadow */
+  box-shadow: none; /* Remove the box shadow */  
 }
 
 /* Place text in the middle of the image */
@@ -649,6 +649,27 @@ footer a:hover {
   background-color: transparent; /* Remove the background color */
   border: none; /* Remove the border */
   box-shadow: none; /* Remove the box shadow */
+}
+
+/* Style the scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; /* Make the track transparent */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px; /* Add border-radius for a rounded handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 
