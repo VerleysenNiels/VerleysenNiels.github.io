@@ -333,15 +333,27 @@ footer a:hover {
 .insights-section .insights-card h3 {
   margin-top: 0; /* Remove the default margin for the title */
   text-align: left; /* Align the title to the left */
-  padding-left: 20px; /* Add left padding to the title */
+  padding-left: 20px; /* Add left padding to the title */  
 }
 
 .projects-section .project-card img,
 .insights-section .insights-card img {
   width: auto;
-  height: 90%;
+  max-height: 90%;
   max-width: 95%;
   object-fit: cover;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.projects-section .project-card video,
+.insights-section .insights-card video {
+  width: auto;
+  max-height: 90%;
+  max-width: 95%;
+  object-fit: cover;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .projects-section .project-card-overlay,
