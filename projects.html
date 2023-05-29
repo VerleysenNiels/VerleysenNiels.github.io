@@ -18,11 +18,18 @@
         <div class="hero-container">
           <h1 class="hero-text">Projects</h1>
           <section id="downloads" class="clearfix">
-            <a href="https://verleysenniels.github.io/" id="return-home" class="button"><span>Back to homepage</span></a>
+            <a href="https://nielsverleysen.com/" id="return-home" class="button"><span>Back to homepage</span></a>
           </section>
         </div>
       </div>
     </header>
+
+    <div class="intro-container">
+      <div class="intro-text">
+        <p>Welcome to my projects page! Here, you'll find an overview of some of the side-projects I have completed in the field of artificial intelligence and deep learning. These projects reflect my passion for exploring diverse areas of AI and pushing the boundaries of what is possible.</p>
+        <p>From computer vision applications to reinforcement learning algorithms and natural language processing, each project represents an opportunity for me to dive into exciting domains and showcase practical applications of AI. Feel free to explore the individual project cards to learn more about each project, including descriptions, code repositories, and demonstrations.</p>
+      </div>
+    </div>  
     
     <div class="ag-timeline-block">
       <section class="ag-section">
@@ -39,13 +46,76 @@
                     <div class="ag-timeline-card_point">2023</div>
                   </div>
                   <div class="ag-timeline-card_meta-box">
-                    <div class="ag-timeline-card_meta">Creating an arXiv Summarizer with PyTorch and HuggingFace</div>
+                    <div class="ag-timeline-card_meta">Image Captioning with ViT-GPT-2 and HuggingFace</div>
                   </div>
                 </div>
                 <div class="ag-timeline-card_item">
                   <div class="ag-timeline-card_inner">
                     <div class="ag-timeline-card_img-box">
-                      <img src="https://github.com/VerleysenNiels/arxiv-summarizer/blob/master/demo/arxiv_demo.gif?raw=true" class="ag-timeline-card_img" alt="arXiv Summarizer"/>
+                      <video class="ag-timeline-card_img" autoplay loop muted>
+                        <source src="images\showcase\image_captioning_demo.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_desc">
+                        Working with image captioning models is an exciting area in deep learning. As one of my side-projects to get hands-on experience with Huggingface I aimed to finetune the ViT-GPT-2 model for image captioning. However, due to limited server space availability caused by ongoing commercial projects, I wasn't able to carry out the actual finetuning process. Nonetheless, I explored the model and wrote code to use and finetune the model with the HuggingFace transformers library. For the general image captioning I also created a demo application that can run using a desktop GPU.
+                      </div>
+                      <div class="ag-timeline-card_buttons">
+                        <a href="https://github.com/VerleysenNiels/image-captioning" class="button"><span>Explore the repository</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">                  
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Implementing PPO for Atari Games</div>
+                  </div>
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2023</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <video class="ag-timeline-card_img" autoplay loop muted>
+                        <source src="images\showcase\ppo.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_desc">
+                        During my studies on Proximal Policy Optimization (PPO), I implemented the algorithm from scratch and trained agents to play Atari games using the Gym environment. PPO is a popular reinforcement learning algorithm known for its stability and sample efficiency. This project allowed me to gain hands-on experience with PPO and understand its inner workings.
+                      </div>
+                      <div class="ag-timeline-card_buttons">
+                        <a href="https://github.com/VerleysenNiels/PPO-pytorch-gym" class="button"><span>Explore the repository</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>            
+              
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2023</div>
+                  </div>
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Creating an arXiv Summarizer with PyTorch and HuggingFace</div>
+                  </div>                  
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <video class="ag-timeline-card_img" autoplay loop muted>
+                        <source src="images\showcase\arxiv_demo.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                      </video>
                     </div>
                     <div class="ag-timeline-card_info">
                       <div class="ag-timeline-card_desc">
@@ -62,9 +132,180 @@
               </div> 
 
               <div class="js-timeline_item ag-timeline_item">
-                <div class="ag-timeline-card_box">
+                <div class="ag-timeline-card_box">  
                   <div class="ag-timeline-card_meta-box">
-                    <div class="ag-timeline-card_meta">Season 12</div>
+                    <div class="ag-timeline-card_meta">Deep Reinforcement Learning Course</div>
+                  </div>                    
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2023</div>
+                  </div>                               
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <video class="ag-timeline-card_img" autoplay loop muted>
+                        <source src="images\showcase\rl_course_demo.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_desc">
+                        The Deep Reinforcement Learning course organized by HuggingFace provided a comprehensive journey, starting from the fundamentals we quickly delved into more advanced topics such as policy-gradient methods and competitive multi-agent environments. The course not only refreshed my RL knowledge but also introduced me to new concepts and techniques. And to be honest, it was also great fun.
+                      </div>
+                      <div class="ag-timeline-card_buttons">
+                        <a href="https://github.com/VerleysenNiels/ReinforcementLearningCourse" class="button"><span>Explore the repository</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">           
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2023</div>
+                  </div>
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Reddit TLDR with PyTorch and HuggingFace</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <video class="ag-timeline-card_img" autoplay loop muted>
+                        <source src="images\showcase\reddit_demo.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_desc">
+                        When working with transformers, HuggingFace is an indispensable platform. It offers a wide range of resources including datasets, pretrained models, courses, and more, specifically tailored for transformers. In my pursuit to dive deeper into transformers, I embarked on various projects utilizing HuggingFace to gain hands-on experience. The Reddit TLDR project is one of several projects I created to explore the capabilities of transformers in summarizing Reddit posts.
+                      </div>
+                      <div class="ag-timeline-card_buttons">
+                        <a href="https://github.com/VerleysenNiels/arxiv-summarizer" class="button"><span>Explore the repository</span></a>
+                        <a href="https://huggingface.co/NielsV/distilbart-cnn-6-6-reddit" class="button"><span>Try out the model</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+              
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">                  
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Transformer Implementation in PyTorch</div>
+                  </div>
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2023</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_desc">
+                        One of my personal study goals going into 2023 was to get a better understanding of transformers, both theoretically and practically. In this repository, I implemented the transformer architecture, as presented in the paper "Attention is all you need," from scratch in PyTorch. By building the transformer model myself, I gained a deep understanding of the attention mechanisms, positional encodings, and feed-forward networks employed in transformers.
+                      </div>
+                      <div class="ag-timeline-card_buttons">
+                        <a href="https://github.com/VerleysenNiels/transformers-pytorch" class="button"><span>Explore the repository</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+              
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">    
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2022</div>
+                  </div>              
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Small Computer Vision Apps</div>
+                  </div>                  
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <video class="ag-timeline-card_img" autoplay loop muted>
+                        <source src="images\showcase\face_blur_demo.webm" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_desc">
+                        In this repository, I developed a collection of small computer vision Python programs. These applications include a face detector and anonymizer, a smart document scanner that automatically crops, transforms, and enhances a document in a picture, an object tracker based on color, and a script that detects when someone's eyes are closed. This project served as a quick refresher for basic computer vision functionalities, and I'm happy to share the results.
+                      </div>
+                      <div class="ag-timeline-card_buttons">
+                        <a href="https://github.com/VerleysenNiels/small_computer_vision_apps" class="button"><span>Explore the repository</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+              
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">                  
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Deep learning from scratch</div>
+                  </div>
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2022</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">                    
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_desc">
+                        In this project, I implemented a simple deep learning framework from scratch to accompany my blog series of the same name. Each notebook is linked to a specific blog post, starting from the mathematics behind a forward pass and efficiently implementing custom neural networks. I then implemented the basic backpropagation algorithm for these custom networks and tested it on an example with dummy data. In the final part, I introduced techniques to further improve the training process, such as minibatch gradient descent, momentum, and RMSProp.
+                      </div>
+                      <div class="ag-timeline-card_buttons">
+                        <a href="https://github.com/VerleysenNiels/Deep-learning-101" class="button"><span>Explore the repository</span></a>
+                        <a href="https://medium.com/@nielsverleysen/deep-learning-from-scratch-neurons-layers-activations-121f61849ba2" class="button"><span>Read the first blog</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+              
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2021</div>
+                  </div>       
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">YOLO object detector with PyTorch</div>
+                  </div>                             
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <video class="ag-timeline-card_img" autoplay loop muted>
+                        <source src="images\showcase\yolo_demo.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_desc">
+                        This repository contains an implementation of the YOLOv3 network (pretrained) in PyTorch. The provided script reads a video, applies object detection, and displays the video with the detected objects highlighted. To modify the configuration and input video, you need to edit the code itself (yolo.py).
+                      </div>
+                      <div class="ag-timeline-card_buttons">
+                        <a href="https://github.com/VerleysenNiels/Pytorch-YOLO" class="button"><span>Explore the repository</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">                  
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Thesis: Temporal modeling for safer spacecrafts</div>
                   </div>
                   <div class="js-timeline-card_point-box ag-timeline-card_point-box">
                     <div class="ag-timeline-card_point">2020</div>
@@ -73,18 +314,17 @@
                 <div class="ag-timeline-card_item">
                   <div class="ag-timeline-card_inner">
                     <div class="ag-timeline-card_img-box">
-                      <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-12.png" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                      <video class="ag-timeline-card_img" autoplay loop muted>
+                        <source src="images\showcase\spacecraft_anomalies_demo.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                      </video>
                     </div>
                     <div class="ag-timeline-card_info">
-                      <div class="ag-timeline-card_title">Season 12</div>
                       <div class="ag-timeline-card_desc">
-                        Donec pede justo, fringilla
-                        vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
-                        venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
-                        tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
-                        tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
-                        Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra
-                        nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.
+                        This project was the main focus of my thesis. It involved developing a proof-of-concept unsupervised anomaly detection system for spacecrafts. However, the system can also be applied to monitor other systems with numerous sensors. The core of the system is based on an LSTM network that learns to predict future sensor observations. By comparing the actual observations with the predictions, the system can detect anomalies and rank the sensors based on their error. For training and testing, I had the privilege of using one year of sensor measurements from the Mars Express orbiter, provided by the European Space Agency. During the testing phase, the system demonstrated its ability to quickly identify deviations in single or multiple sensors.
+                      </div>
+                      <div class="ag-timeline-card_buttons">
+                        <a href="https://github.com/VerleysenNiels/Temporal-modeling-for-safer-spacecrafts" class="button"><span>Explore the repository</span></a>
                       </div>
                     </div>
                   </div>
@@ -92,18 +332,175 @@
                 </div>
               </div>
               
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2020</div>
+                  </div>
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Pattern constructing swarm in MASON</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <video class="ag-timeline-card_img" autoplay loop muted>
+                        <source src="images\showcase\swarm_demo.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_desc">
+                        For this project, I recreated the self-organizing kilobot swarm from the WYSS Institute in the MASON environment. This swarm has the ability to arrange itself into any given shape, as long as the shape consists of a single piece. The individual bots build up a gradient field around seed bots, which they use to determine their location. By knowing their location, the bots can then determine when and where to join the desired shape. I extended this system by introducing the concept of bridge formation, enabling the bots to construct multiple shapes simultaneously. Although the current bridge-forming principle is not entirely stable, the project paper provides potential solutions to address this issue.
+                      </div>
+                      <div class="ag-timeline-card_buttons">
+                        <a href="https://github.com/VerleysenNiels/Self-assembling-swarm" class="button"><span>Explore the repository</span></a>
+                        <a href="https://github.com/VerleysenNiels/Self-assembling-swarm/blob/master/Paper_Self_Assembling_Swarm.pdf" class="button"><span>Read the paper</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+              
+
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">                  
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Anomaly detection on synthetic data</div>
+                  </div>
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2020</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <video class="ag-timeline-card_img" autoplay loop muted>
+                        <source src="images\showcase\synthetic_anomalies_demo.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_desc">
+                        This project served as a complementary component to the main project of my thesis, "Temporal modeling for safer spacecrafts" (2020). It involved developing a proof-of-concept unsupervised anomaly detection system trained on synthetic signals. The system is built upon an LSTM network that learns to predict future values of the signal. Anomalies are detected by comparing the predicted values with the actual observations using a threshold on the loss. By utilizing synthetic data, this system allowed for extensive testing of various aspects and capabilities. The system demonstrated proficiency in detecting deviations in the amplitude and frequency of the signal. However, it struggled to reliably detect the decay of a high-frequency component within a signal.
+                      </div>
+                      <div class="ag-timeline-card_buttons">
+                        <a href="https://github.com/VerleysenNiels/LSTM_Periodic_Function" class="button"><span>Explore the repository</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>              
+
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2019</div>
+                  </div>
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Text generator with Long Short-Term Memory networks</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <video class="ag-timeline-card_img" autoplay loop muted>
+                        <source src="images\showcase\simple_text_generator_demo.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_desc">
+                        I worked on this project while studying and exploring Long Short-Term Memory (LSTM) networks. The goal was to construct and train an LSTM network to generate text based on a given text file. However, at that time, I had limited knowledge about language models and didn't incorporate word embeddings. Instead, I made the model predict the next character given a sequence of 100 characters. As a result, the generated text may not have meaningful sentences, but it often produces amusing outputs. Despite its limitations, this project allowed me to gain hands-on experience with LSTMs and understand their capabilities and challenges.
+                      </div>
+                      <div class="ag-timeline-card_buttons">
+                        <a href="https://github.com/VerleysenNiels/Textgeneration_with_RNN" class="button"><span>Explore the repository</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+              
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">                  
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Reinforcement learning in OpenAI Gym</div>
+                  </div>
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2019</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <video class="ag-timeline-card_img" autoplay loop muted>
+                        <source src="images\showcase\qlearning_demo.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_desc">
+                        As part of my thesis (Reinforcement Learning: with applications to robotic control, 2019), I tested different versions of the Q-Learning algorithm in the OpenAI Gym environment. Reinforcement Learning enables an agent to learn and perform tasks through reinforcement of good behavior and punishment of bad behavior. In this project, the goal was to train an agent to play a video game like a human. The agent receives frames as input and needs to decide which button to press in order to gain points and avoid losing. In my thesis, I then applied this algorithm to a simulated robotic arm to teach it to pick up boxes.
+                      </div>
+                      <div class="ag-timeline-card_buttons">
+                        <a href="https://github.com/VerleysenNiels/Q-Learning" class="button"><span>Explore the repository</span></a>
+                        <a href="https://github.com/VerleysenNiels/Q-Learning/blob/master/Paper_Deep_Reinforcement_Learning.pdf" class="button"><span>Read the paper</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+              
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">2019</div>
+                  </div>
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Indoor location tracking in museums</div>
+                  </div>
+                </div>
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <img src="images\showcase\computervisie_demo.png" alt="Project Demo" class="ag-timeline-card_img" />
+                    </div>
+                    <div class="ag-timeline-card_info">
+                      <div class="ag-timeline-card_desc">
+                        In this group project, we applied computer vision techniques to determine the location of a user inside a museum. Using a camera mounted on a smartphone or a fixed position, the system captured the user's view while they walked around the museum. The program detected paintings in the video frames and extracted them. By performing feature matching and leveraging known painting locations, the system determined the user's location within the museum. To improve accuracy, we eliminated estimated locations that were physically impossible, such as abrupt jumps across the museum between frames.
+                      </div>
+                      <div class="ag-timeline-card_buttons">
+                        <a href="https://github.com/VerleysenNiels/Project_Computervisie" class="button"><span>Explore the repository</span></a>
+                        <a href="https://github.com/VerleysenNiels/Project_Computervisie/blob/master/Indoor%20Location%20Tracking%20in%20Museums%20by%20Painting%20Detection%20and%20Matching.pdf" class="button"><span>Read the paper</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>              
+              
             </div>
           </div>
         </div>
       </section>
-    </div>  
-
-          
+    </div>          
     
     <footer>
-      Created by Niels Verleysen.
-      <a href='https://www.freepik.com/free-photos-vectors/banner'>Banner vector created by kjpargeter - www.freepik.com</a>
+      Created by Niels Verleysen and ChatGPT &#128521;
     </footer>
     
   </body>
 </html>
+
+
+      
+
+      
+
+      
+
+      
